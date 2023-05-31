@@ -48,5 +48,5 @@ superuser: true
 title: Tianxiong Zhang ， 張天雄
 ---
 
-I graduated from Inner Mongolia University of Technology in 2017 with a bachelor degree in transportation, I went to the Civil Aviation Flight University of China to pursue a master's degree, supervised by Professor Xinping Zhu, and will graduate in July 2024. I am passionate about the transportation industry and enjoy riding all types of transportation and using various simulation software to simulate transportation systems. In addition, I like to study the use of computer vision aspects to solve safety problems in transportation.
+I graduated from Inner Mongolia University of Technology in 2017 with a bachelor degree in transportation, then I went to the Civil Aviation Flight University of China to pursue a master's degree, supervised by Professor Xinping Zhu, and will graduate in July 2024. I am passionate about the transportation industry and enjoy riding all types of transportation and using various simulation software to simulate transportation systems. In addition, I like to study the use of computer vision aspects to solve safety problems in transportation.
 {style="text-align: justify;"}

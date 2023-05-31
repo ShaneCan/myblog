@@ -57,21 +57,21 @@ sections:
     - name: R
     title: Skills
   id: Skills
-- block: collection
-  content:
-    # filters:
-    #   exclude_featured: true
-    #   folders:
-    #   - publication
-    # text: |-
-    #   {{% callout note %}}
-    #   Quickly discover relevant content by [filtering publications](./publication/).
-    #   {{% /callout %}}
-    title: Recent Publications
-  design:
-    columns: "2"
-    view: citation
-  id: publications
+# - block: collection
+#   content:
+#     # filters:
+#     #   exclude_featured: true
+#     #   folders:
+#     #   - publication
+#     # text: |-
+#     #   {{% callout note %}}
+#     #   Quickly discover relevant content by [filtering publications](./publication/).
+#     #   {{% /callout %}}
+#     title: Recent Publications
+#   design:
+#     columns: "2"
+#     view: citation
+#   id: publications
 # - block: accomplishments
 #   content:
 #     date_format: Jan 2006
@@ -104,6 +104,28 @@ sections:
 #     title: Accomplish&shy;ments
 #   design:
 #     columns: "2"
+- block: collection
+  content:
+    count: 5
+    filters:
+      author: ""
+      category: ""
+      exclude_featured: false
+      exclude_future: false
+      exclude_past: false
+      folders:
+      - publication
+      publication_type: ""
+      tag: ""
+    offset: 0
+    order: desc
+    subtitle: ""
+    text: ""
+    title: Recent Papers
+  design:
+    columns: "2"
+    view: compact
+  id: publications
 - block: collection
   content:
     count: 5

@@ -3,7 +3,7 @@
     "path": "D:/Rproject/myblog/content/post/getting-started/index.md",
     "project_path": "content/post/getting-started/index.md",
     "type": "markdown",
-    "hash": "3213728580",
+    "hash": "410107553",
     "contents": "",
     "dirty": false,
     "created": 1685521179786.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "34,1023",
-        "scrollLine": "33"
+        "cursorPosition": "12,21",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1685521871,
+    "lastKnownWriteTime": 1685523957,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1685521871996,
+    "last_content_update": 1685523957304,
     "read_only": false,
     "read_only_alternatives": []
 }

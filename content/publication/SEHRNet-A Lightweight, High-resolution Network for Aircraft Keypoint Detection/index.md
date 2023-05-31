@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "Under Review"
 slides: SEHRNet - A Lightweight, High-Resolution Network for Aircraft Keypoint Detection
-summary: Use CV to solve Apron safety problem.
+summary: Improved performance of keypoint detection networks.
 tags:
 - Source Themes
 title: SEHRNet - A Lightweight, High-Resolution Network for Aircraft Keypoint Detection

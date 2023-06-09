@@ -1,9 +1,13 @@
 {
     "sortOrder": [
         {
-            "columnIndex": 2,
+            "columnIndex": 1,
             "ascending": true
+        },
+        {
+            "columnIndex": 2,
+            "ascending": false
         }
     ],
-    "path": "D:/Rproject/myblog/content/publication/Research on conflict detection model for taxi‐in process on the apron based on aircraft wingtip keypoint detection"
+    "path": "D:/Rproject/myblog/content/post/2023-06-02-recent-gains-from-reading-academic-literature-June-2nd"
 }

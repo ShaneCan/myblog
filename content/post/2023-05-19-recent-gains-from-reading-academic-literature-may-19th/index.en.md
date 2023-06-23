@@ -1,8 +1,8 @@
 ---
-title: Recent Gains from reading research paper[May 19th]
+title: Recent Gains from reading research papers[May 19th]
 author: Tianxiong Zhang
 date: '2023-05-19'
-slug: recent-gains-from-reading-research-paper-may-19th
+slug: recent-gains-from-reading-research-papers-may-19th
 categories:
   - Essay
 tags:

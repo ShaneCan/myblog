@@ -1,8 +1,8 @@
 ---
-title: Recent Gains from reading research paper[June 2nd]
+title: Recent Gains from reading research papers[June 2nd]
 author: Tianxiong Zhang
 date: '2023-06-02'
-slug: recent-gains-from-reading-research-paper-june-2nd
+slug: recent-gains-from-reading-research-papers-june-2nd
 categories:
   - Essay
 tags:

@@ -1,5 +1,5 @@
 ---
-bio: My research interests include computer vision, Ros and Automatic driving.
+bio: My research interests include Computer Vision, Autonomous Driving and Airport Operations Management.
 education:
   courses:
   - course: MEng in Transportation

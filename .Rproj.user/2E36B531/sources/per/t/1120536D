@@ -1,19 +1,17 @@
 {
-    "id": "556E8D5A",
-    "path": "D:/Rproject/myblog/content/authors/_index.md",
-    "project_path": "content/authors/_index.md",
+    "id": "1120536D",
+    "path": "D:/Rproject/myblog/content/privacy.md",
+    "project_path": "content/privacy.md",
     "type": "markdown",
-    "hash": "3515727966",
+    "hash": "2267004064",
     "contents": "",
     "dirty": false,
-    "created": 1695905598870.0,
+    "created": 1697511866676.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 6,
     "properties": {
         "source_window_id": "",
-        "Source": "Source",
-        "cursorPosition": "9,0",
-        "scrollLine": "0"
+        "Source": "Source"
     },
     "folds": "",
     "lastKnownWriteTime": 1685494941,

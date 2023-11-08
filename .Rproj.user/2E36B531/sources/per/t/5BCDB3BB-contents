@@ -1,7 +1,7 @@
 ---
 title: Recent Gains from reading research papers[Nov 3rd]
 author: Tianxiong Zhang
-date: '2023-11-3'
+date: '2023-11-03'
 slug: recent-gains-from-reading-research-papers-Nov-3rd
 categories:
   - Essay
@@ -10,7 +10,7 @@ tags:
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2023-11-3T20:38:32+08:00'
+lastmod: '2023-11-03T20:38:32+08:00'
 featured: no
 draft: no
 image:

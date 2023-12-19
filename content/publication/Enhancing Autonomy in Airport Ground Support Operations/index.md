@@ -7,9 +7,6 @@ authors:
 - Tianxiong Zhang
 - Zhiqiang Zhang
 - Xinping Zhu
-- Boxu Chen
-- Yajun Zou
-- Yuming Zhong
 
 date: "2023-11-17T00:00:00Z"
 doi: ""
@@ -19,16 +16,16 @@ image:
   focal_point: ""
   preview_only: false
 projects: []
-publication: 'Remote Sensing'
+publication: 'Sensors'
 publication_short: ""
 publication_types:
 - "2"
 #publishDate: "2023-11-17T00:00:00Z"
-slides: Enhancing Autonomy in Airport Ground Support Operations - A Navigation and Docking Control Approach for Unmanned Ground Support Equipment
-summary: A perception and control framework for Unmanned GSE in airports
+slides: Detection and Control Framework for Unmanned Ground Support Equipment within the Aircraft Stand
+summary: Enhancing Autonomy in Airport Ground Support Operations - A Navigation and Docking Control Approach for Unmanned Ground Support Equipment
 tags:
 - Source Themes
-title: Enhancing Autonomy in Airport Ground Support Operations - A Navigation and Docking Control Approach for Unmanned Ground Support Equipment
+title: Detection and Control Framework for Unmanned Ground Support Equipment within the Aircraft Stand
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
 # url_pdf: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/itr2.12314

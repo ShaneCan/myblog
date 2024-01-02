@@ -1,5 +1,5 @@
 ---
-abstract: Unmanned operation in airport ground support processes is a major trend in the future devel-opment of civil aviation. In this context, we introduce an innovative perceptual and control method for Autonomous Ground Support Equipment (GSE) within the apron aircraft stand. Firstly, we designed an inventive Virtual Channel Layout within the aircraft stand for Un-manned GSE, considering the operational rules and varying aircraft types. This layout employs turning induction markers to define critical turning points and direct GSE navigation. Secondly, we addressed the necessity for rapid and highly precise pose adjustments during docking by in-tegrating cameras and Lidar sensors. By implementing an enhanced boundary line detection and a lightweight improved YOLO algorithm, this helps to quick and accurate detection of bounda-ries, obstacles, and docking targets. Finally, we developed a unique control algorithm designed to aptly navigate obstacle avoidance and docking for GSE under diverse apron operational sce-narios, ensuring precise control over vehicle pose and speed. Our experimental results indicate a detection accuracy of 89% for the Virtual Channel Boundary Line, 95% for guiding markers, and an F1-Score of 0.845 for the YOLO object detection algorithm. The GSE demonstrated a mean docking error position of less than 3 cm and an angular deviation below 5 degrees. These results substantiate the effectiveness and superiority of our proposed methodology for Unmanned GSE navigation and aircraft docking.
+abstract: The rapid advancement in Unpiloted Robotic Vehicle technology has significantly influenced ground support operations at airports, marking a critical shift towards future development. This study presents a novel Unpiloted Ground Support Equipment (GSE) detection and control framework, comprising virtual channel delineation, boundary line detection, object detection, and navigation and docking control, to facilitate automated aircraft docking within the aircraft stand. Firstly, we developed a bespoke virtual channel layout for Unpiloted GSE, aligning with opera-tional regulations and accommodating a wide spectrum of aircraft types. This layout employs turning induction markers to define essential navigation points, thereby streamlining GSE move-ment. Secondly, we integrated cameras and Lidar sensors to enable rapid and precise pose ad-justments during docking. The introduction of a boundary line detection system, along with an optimized, lightweight YOLO algorithm, ensures swift and accurate identification of boundaries, obstacles, and docking sites. Finally, we formulated a unique control algorithm for effective obsta-cle avoidance and docking in varied apron conditions, guaranteeing meticulous management of vehicle pose and speed. Our experimental findings reveal an 89% detection accuracy for the virtual channel boundary line, a 95% accuracy for guiding markers, and an F1-Score of 0.845 for the YO-LO object detection algorithm. The GSE achieved an average docking error of less than 3 cm and an angular deviation under 5 degrees, corroborating the efficacy and advanced nature of our proposed approach in Unpiloted GSE detection and aircraft docking.
 # author_notes:
 # - Equal contribution
 # - Equal contribution
@@ -8,8 +8,8 @@ authors:
 - Zhiqiang Zhang
 - Xinping Zhu
 
-date: "2023-11-17T00:00:00Z"
-doi: ""
+date: "2023-11-29T00:00:00Z"
+doi: "https://doi.org/10.3390/s24010205"
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
@@ -20,15 +20,15 @@ publication: 'Sensors'
 publication_short: ""
 publication_types:
 - "2"
-#publishDate: "2023-11-17T00:00:00Z"
-slides: Detection and Control Framework for Unmanned Ground Support Equipment within the Aircraft Stand
+publishDate: "2023-11-29T00:00:00Z"
+slides: Detection and Control Framework for Unpiloted Ground Support Equipment within the Aircraft Stand
 summary: Enhancing Autonomy in Airport Ground Support Operations - A Navigation and Docking Control Approach for Unmanned Ground Support Equipment
 tags:
 - Source Themes
-title: Detection and Control Framework for Unmanned Ground Support Equipment within the Aircraft Stand
+title: Detection and Control Framework for Unpiloted Ground Support Equipment within the Aircraft Stand
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
-# url_pdf: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/itr2.12314
+url_pdf: https://www.mdpi.com/1424-8220/24/1/205
 # url_poster: ""
 # url_project: ""
 # url_slides: ""

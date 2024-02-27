@@ -21,7 +21,7 @@ image:
 projects: []
 summary: "Daily Paper Reading "
 ---
-#### [1] [1] Doherty K, Fourie D, Leonard J. Multimodal semantic slam with probabilistic data association[C]//2019 international conference on robotics and automation (ICRA). IEEE, 2019: 2419-2425.
+#### [1] Doherty K, Fourie D, Leonard J. Multimodal semantic slam with probabilistic data association[C]//2019 international conference on robotics and automation (ICRA). IEEE, 2019: 2419-2425.
 
 Semantic SLAM problems can be decomposed into discrete inference problems: determining object class labels and measurement-landmark correspondences (data association problems), as well as continuous inference problems: obtaining the robot pose and object position set in the environment. However, under fuzzy data association, this is often a non-Gaussian inference problem, while most previous work has focused on Gaussian inference. The paper proposes a solution by representing hypotheses as multiple modes of an equivalent non-Gaussian sensor model. Then, non-parametric belief propagation is used to solve the resulting non-Gaussian inference problem.
 

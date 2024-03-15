@@ -10,8 +10,8 @@ authors:
 - Honghao Chen
 - Jiajun Li
 - Yuming Zhong
-date: "2022-11-20"
-doi: ""
+date: "2024-03-13"
+doi: "https://doi.org/10.1016/j.aej.2024.03.003"
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
@@ -22,15 +22,15 @@ publication: 'Alexandria Engineering Journal'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "Under Review"
+publishDate: "2024-03-13"
 slides: Aircraft engine danger areas incursion detection using keypoint detection and IoT
-summary: Use CV to solve the problem of engine scratching and possible harm to the vehicle
+summary: To mitigate the risk of irreversible damage caused by aircraft engines to equipment and personnel, addressing the scarcity of research on visualizing engine danger zones and conflict prevention.
 tags:
 - Source Themes
 title: Aircraft engine danger areas incursion detection using keypoint detection and IoT
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
-# url_pdf: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/itr2.12314
+url_pdf: https://www.sciencedirect.com/science/article/pii/S1110016824002205
 # url_poster: ""
 # url_project: ""
 # url_slides: ""

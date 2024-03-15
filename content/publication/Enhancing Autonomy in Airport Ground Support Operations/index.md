@@ -22,7 +22,7 @@ publication_types:
 - "2"
 publishDate: "2023-11-29T00:00:00Z"
 slides: Detection and Control Framework for Unpiloted Ground Support Equipment within the Aircraft Stand
-summary: Enhancing Autonomy in Airport Ground Support Operations - A Navigation and Docking Control Approach for Unmanned Ground Support Equipment
+summary: Innovate apron operations by integrating autonomous vehicles, addressing the gap in research on their automated docking processes.
 tags:
 - Source Themes
 title: Detection and Control Framework for Unpiloted Ground Support Equipment within the Aircraft Stand

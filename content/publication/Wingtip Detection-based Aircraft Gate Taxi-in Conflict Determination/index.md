@@ -9,7 +9,7 @@ authors:
 - Jiajun Li
 - Qing Zhao
 - Hao Xu
-date: "2022-9-5T00:00:00Z"
+date: "2022-09-05T00:00:00Z"
 doi: "10.13637/j.issn.1009-6094.2022.1864."
 featured: false
 image:

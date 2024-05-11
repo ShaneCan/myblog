@@ -1,5 +1,5 @@
 ---
-abstract: The integration of unmanned guidance vehicles is posited to effectively mitigate the safety hazards associated with human-piloted guidance, such as aircraft misguidance and omission. However, current research on the risks associated with unmanned guidance vehicles during the implementation of aircraft taxiing guidance is neither comprehensive nor quantitatively established. This paper presents a simulation of unmanned guidance vehicles implementing human-piloted aircraft taxiing, utilizing a coordinate transformation algorithm to interconnect data across dual platforms. By applying Monte Carlo simulation, a dataset representative of the entire taxiing guidance process is generated. Focusing on the movement between unmanned guidance vehicles and human-piloted aircraft during taxiing, three primary risk assessment indicators are introduced. A risk evaluation index weight normalization function is employed, based on a Gaussian distribution that conforms to a normal distribution, to qualitatively assess risk levels according to quantifiable operational data. The findings indicate that quantifiable risk assessment indicators can provide more timely and referenceable risk evaluations, offering actionable solutions for risk mitigation.
+abstract: Due to the potential safety hazards such as incorrect or missed aircraft guidance caused by human-operated guiding, the introduction of unmanned guiding vehicles can effectively reduce these unsafe events. However, the risks associated with unmanned driving guiding vehicles in the process of guiding aircraft taxiing have not yet been thoroughly and quantitatively studied. This paper collects the kinematic parameters of the unmanned driving guiding vehicle during the process of guiding manned aircraft, applies Monte Carlo simulation to generate a dataset of simulated operational processes that cover the entire taxiing guidance process, and introduces three major risk assessment indicators based on the motion process between the unmanned driving guiding vehicle and the manned aircraft during the taxiing guidance process. Through the normalization function of risk evaluation indicator weights and based on the Gaussian distribution that satisfies the normal distribution, a qualitative evaluation of risk levels is conducted based on quantifiable actual operational processes. The results show that quantifiable risk assessment indicators can provide risk evaluation results with stronger real-time reference and offer operable solutions for risk avoidance.
 # author_notes:
 # - Equal contribution
 # - Equal contribution
@@ -10,7 +10,7 @@ authors:
 - Xinping Zhu
 
 date: "2022-09-07T00:00:00Z"
-doi: ""
+doi: "10.23977/jeis.2024.090204"
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
@@ -21,15 +21,15 @@ publication: 'Journal of Electronics and Information Science'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "Acceptance pending publication"
-slides: Risk Assessment of Unmanned Ground Support Equipment Taxiing Guidance Based on Monte Carlo Simulation
-summary: Investigating the use of unmanned guidance vehicles for safer aircraft taxiing, presenting a data-driven simulation approach that introduces new risk assessment indicators for effective risk mitigation.
+publishDate: "2024-04-29"
+slides: Monte Carlo Simulation Based Risk Assessment for Unmanned Ground Equipment Taxiing Guidance
+summary: Investigating the use of unmanned guidance vehicles for safer aircraft taxiing, presenting a data driven simulation approach that introduces new risk assessment indicators for effective risk mitigation.
 tags:
 - Source Themes
-title: Risk Assessment of Unmanned Ground Support Equipment Taxiing Guidance Based on Monte Carlo Simulation
+title: Monte Carlo Simulation Based Risk Assessment for Unmanned Ground Equipment Taxiing Guidance
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
-# url_pdf: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/itr2.12314
+url_pdf: https://www.clausiuspress.com/assets/default/article/2024/05/09/article_1715307615.pdf
 # url_poster: ""
 # url_project: ""
 # url_slides: ""

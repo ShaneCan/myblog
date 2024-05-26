@@ -22,12 +22,12 @@ main:
   - name: Projects
     url: '#projects'
     weight: 50
-  - name: Contact
-    url: '#contact'
-    weight: 60
+  # - name: Contact
+  #   url: '#contact'
+  #   weight: 60
   - name: CV
     url: uploads/resume.pdf
-    weight: 70
+    weight: 60
 
 
 # Link to a PDF of your resume/CV from the menu.

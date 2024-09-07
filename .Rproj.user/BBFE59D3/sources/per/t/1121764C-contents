@@ -10,7 +10,7 @@ education:
   - course: BEng in Transportation
     institution: Inner Mongolia University of Technology 
     year: 2021
-email: "#contact"
+email: tianxiong.zhang@tu-dresden.de
 first_name: Tianxiong
 highlight_name: true
 interests:
@@ -25,7 +25,7 @@ role: PhD Candidate
 social:
 - icon: envelope
   icon_pack: fas
-  url: tianxiong.zhang@tu-dresden.de
+  url: '#contact'
   
 # - display:
 #     header: true

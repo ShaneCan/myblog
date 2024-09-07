@@ -1,29 +1,32 @@
 ---
-bio: My research interests include Computer Vision, Autonomous Driving and Airport Operations Management.
+bio: My research interests include Digital Twin, Computer Vision, Urban Air Mobility (UAM).
 education:
   courses:
+  - course: Ph.D. Candidate
+    institution: Technische Universität Dresden
   - course: Master of Transportation
     institution: Civil Aviation Flight University of China
     year: 2024
   - course: BEng in Transportation
     institution: Inner Mongolia University of Technology 
     year: 2021
-email: "tianxiongzhang1221@163.com"
+email: "#contact"
 first_name: Tianxiong
 highlight_name: true
 interests:
-- Artificial Intelligence
+- Digital Twin
 - Computer Vision
 - Robotics
 last_name: Zhang
 organizations:
-- name: Civil Aviation Flight University of China
-  url: https://www.cafuc.edu.cn/english1/Home.htm
-role: MSc
+- name: Technische Universität Dresden
+  url: https://tu-dresden.de
+role: PhD Candidate
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  url: tianxiong.zhang@tu-dresden.de
+  
 # - display:
 #     header: true
 #   icon: twitter
@@ -48,5 +51,5 @@ superuser: true
 title: Tianxiong Zhang ， 張天雄
 ---
 
-I obtained my Bachelor's degree in Transportation from Inner Mongolia University of Technology in 2017. Following that, I advanced my studies at the Civil Aviation Flight University of China, where I am currently pursuing a Master's degree under the guidance of Prof. Xinping Zhu, with an expected graduation date of July 2024. Currently, my research focus is directed towards the automation of vehicle at airports (GSE) and application of 3D Reconstruction. With a deep-seated passion for the transportation sector, I am particularly interested in leveraging computer vision to address and mitigate traffic safety challenges.
+I obtained my Master's degree in Transportation from Civil Aviation Flight University of China in 2024. Following that, I embarked on an academic journey at the [Chair of Software Technology (ST group)](https://tu-dresden.de/ing/informatik/smt/st) at Technische Universität Dresden, where I am pursuing my PhD under the guidance of [Prof. Uwe Aßmann](http://www1.inf.tu-dresden.de/~ua1/). I am also a member of the project [RTG 2947 „AirMetro“](https://tu-dresden.de/bu/verkehr/airmetro/rtg-2947-ueberblick), funded by DFG. Currently, my research focus is ensuring cyber-physical consistency in digital twin simulations for Unmanned Aerial Vehicles (UAVs). With a deep-seated passion for the transportation sector, I am particularly interested in leveraging simulation to address and mitigate traffic safety challenges.
 {style="text-align: justify;"}

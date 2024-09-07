@@ -200,49 +200,49 @@ sections:
 #     title: Popular Topics
 #   design:
 #     columns: "2"
-# - block: contact
-#   content:
-#     address:
-#       city: Guanghan
-#       country: China
-#       country_code: CN
-#       postcode: "618307"
-#       region: Sichuan Provice, China
-#       street: No.46, Section 4, Nanchang Road
-#     # appointment_url: https://calendly.com
-#     autolink: true
-#     contact_links:
-#     # - icon: twitter
-#     #   icon_pack: fab
-#     #   link: https://twitter.com/Twitter
-#     #   name: DM Me
-#     # - icon: skype
-#     #   icon_pack: fab
-#     #   link: skype:echo123?call
-#     #   name: Skype Me
-#     # - icon: video
-#     #   icon_pack: fas
-#     #   link: https://zoom.com
-#     #   name: Zoom Me
-#     # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-#     email: tianxiongzhang1221@163.com
-#     # form:
-#     #   formspree:
-#     #     id: null
-#     #   netlify:
-#     #     captcha: false
-#     #   provider: netlify
-#     # office_hours:
-#     # - Monday 10:00 to 13:00
-#     # - Wednesday 09:00 to 10:00
-#     phone: +86 15934146183
-#     subtitle: null
-#     # text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
-#     #   ut magna et, vehicula efficitur enim.
-#     title: Contact
-#   design:
-#     columns: "2"
-#   id: contact
+- block: contact
+  content:
+    address:
+      city: Dresden
+      country: Germany
+      country_code: DE
+      postcode: "01069"
+      region: Germany
+      street: 2098, Andreas-Pfitzmann-Bau (APB), Nöthnitzer Strasse 46
+    # appointment_url: https://calendly.com
+    autolink: true
+    contact_links:
+    # - icon: twitter
+    #   icon_pack: fab
+    #   link: https://twitter.com/Twitter
+    #   name: DM Me
+    # - icon: skype
+    #   icon_pack: fab
+    #   link: skype:echo123?call
+    #   name: Skype Me
+    # - icon: video
+    #   icon_pack: fas
+    #   link: https://zoom.com
+    #   name: Zoom Me
+    # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+    email: tianxiong.zhang@tu-dresden.de
+    # form:
+    #   formspree:
+    #     id: null
+    #   netlify:
+    #     captcha: false
+    #   provider: netlify
+    # office_hours:
+    # - Monday 10:00 to 13:00
+    # - Wednesday 09:00 to 10:00
+    # phone: +86 15934146183
+    subtitle: null
+    # text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
+    #   ut magna et, vehicula efficitur enim.
+    title: Contact
+  design:
+    columns: "2"
+  id: contact
 title: null
 type: landing
 ---

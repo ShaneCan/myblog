@@ -21,4 +21,4 @@ image:
 projects: []
 summary: "Started in Germany "
 ---
-#### Hello Germany. Hallo Dresden!
+#### Hello Dresden!

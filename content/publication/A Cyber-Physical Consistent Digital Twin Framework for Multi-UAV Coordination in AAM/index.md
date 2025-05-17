@@ -1,5 +1,5 @@
 ---
-abstract: Advanced Air Mobility (AAM) is an interconnected, multimodal transportation network that relies on coordinated low-altitude Unmanned Aerial Vehicle (UAV) fleets operating in dynamic environments. These fleets must execute complex tasks with adaptive behavior while maintaining formal alignment with overarching mission objectives. Digital Twin (DT) plays a crucial role in this domain by linking digital models to their physical counterparts, enabling real-time synchronization and adaptive UAV behavior. This work introduces a DT framework that employs formal modeling languages to define and execute hierarchical, multi-dimensional mission logic in multi-UAV coordination. This framework leverages a rule-based language to manage complex system-level interactions and analyze emergent behaviors in multi-level system dynamics. Additionally, we propose an error correction mechanism to address inconsistencies between digital models and the physical multi-UAV systems. By ensuring real-time cyber-physical consistency, our DT framework facilitates adaptive formation coordination through modular AAM operations, dynamic trajectory adjustments, and collision-free navigation in complex, unpredictable environments.
+abstract: Advanced Air Mobility (AAM) is an interconnected, multimodal transportation network that relies on coordinated low-altitude Unmanned Aerial Vehicle (UAV) fleets operating in dynamic environments. These fleets must execute complex tasks with adaptive behavior while maintaining formal alignment with overarching mission objectives. Digital Twin (DT) plays a crucial role in this domain by linking digital models to their physical counterparts, enabling real-time synchronization and adaptive UAV behavior. This work introduces a DT framework that employs Bigraph-based formal modeling to define and execute hierarchical, multi-dimensional mission logic in multi-UAV coordination. This framework leverages a rule-based language to manage complex system-level interactions and analyze emergent behaviors in multi-level system dynamics. Additionally, we propose a runtime consistency manager, the MAPE-K workflow, to address inconsistencies between digital models and the physical multi-UAV systems in operation. Preliminary results indicate that our DT framework facilitates adaptive formation coordination through modular AAM operations, dynamic trajectory adjustments, and collision-free navigation in complex, unpredictable environments.
 # author_notes:
 # - Equal contribution
 # - Equal contribution
@@ -16,7 +16,7 @@ image:
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Submitted to* Fifteenth USA/Europe Air Traffic Management Research and Development Seminar (ATM2025)'
+# publication: '*Submitted to* Fifteenth USA/Europe Air Traffic Management Research and Development Seminar (ATM2025)'
 publication_short: ""
 publication_types:
 - "1"

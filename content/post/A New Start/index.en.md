@@ -2,7 +2,7 @@
 title: A New Start
 author: Tianxiong Zhang
 date: '2024-08-22'
-slug: Started in Germany
+slug: Started in TU Dresden
 categories:
   - Essay
 tags:
@@ -19,6 +19,6 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Started in Germany "
+summary: "Started in TU Dresden"
 ---
 #### Hello Dresden!

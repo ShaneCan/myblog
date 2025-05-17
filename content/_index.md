@@ -67,7 +67,7 @@ sections:
 #     #   {{% callout note %}}
 #     #   Quickly discover relevant content by [filtering publications](./publication/).
 #     #   {{% /callout %}}
-#     title: Recent Publications
+#     title: Selected Publications
 #   design:
 #     columns: "2"
 #     view: citation
@@ -106,7 +106,7 @@ sections:
 #     columns: "2"
 - block: collection
   content:
-    count: 5
+    count: 6
     filters:
       author: ""
       category: ""
@@ -121,7 +121,7 @@ sections:
     order: desc
     subtitle: ""
     text: ""
-    title: Recent Papers
+    title: Selected Publications
   design:
     columns: "2"
     view: compact
@@ -153,10 +153,10 @@ sections:
     buttons:
     - name: All
       tag: '*'
-    - name: Deep Learning
-      tag: Deep Learning
-    - name: Other
-      tag: Demo
+#    - name: Deep Learning
+#      tag: Deep Learning
+#    - name: Other
+#      tag: Demo
     default_button_index: 0
     filters:
       folders:

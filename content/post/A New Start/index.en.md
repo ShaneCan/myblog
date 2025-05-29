@@ -4,9 +4,9 @@ author: Tianxiong Zhang
 date: '2024-08-22'
 slug: Started in TU Dresden
 categories:
-  - Essay
+  - Blog
 tags:
-  - Digital Twin
+  - Blog
 subtitle: ''
 summary: ''
 authors: []

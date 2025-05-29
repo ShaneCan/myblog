@@ -4,9 +4,9 @@ author: Tianxiong Zhang
 date: '2024-05-16'
 slug: Master's thesis defense
 categories:
-  - Essay
+  - Blog
 tags:
-  - Deep Learning
+  - Blog
 subtitle: ''
 summary: ''
 authors: []

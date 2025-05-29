@@ -2,7 +2,7 @@
 authors:
 - admin
 categories:
-- Essay
+- Blog
 date: "2023-05-31T00:00:00Z"
 draft: false
 featured: false

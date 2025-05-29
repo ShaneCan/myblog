@@ -4,9 +4,9 @@ author: Tianxiong Zhang
 date: '2024-11-24'
 slug: Workshop in Meißen
 categories:
-  - Essay
+  - Blog
 tags:
-  - Digital Twin
+  - Blog
 subtitle: ''
 summary: ''
 authors: []

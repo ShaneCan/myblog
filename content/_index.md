@@ -40,23 +40,23 @@ sections:
 #   design:
 #     columns: "2"
 #   id: experience
-- block: features
-  content:
-    items:
-    - name: Python
-    - name: Deep Learning
-    - name: Computer Vision
-    - name:
-    - name: 
-    - name: 
-    - name:
-    - name: 
-    - name: 
-    - name: ROS
-    - name: Linux
-    - name: R
-    title: Skills
-  id: Skills
+# - block: features
+#   content:
+#     items:
+#     - name: Python
+#     - name: Deep Learning
+#     - name: Computer Vision
+#     - name:
+#     - name: 
+#     - name: 
+#     - name:
+#     - name: 
+#     - name: 
+#     - name: ROS
+#     - name: Linux
+#     - name: R
+#     title: Skills
+#   id: Skills
 # - block: collection
 #   content:
 #     # filters:
@@ -126,28 +126,6 @@ sections:
     columns: "2"
     view: compact
   id: publications
-- block: collection
-  content:
-    count: 5
-    filters:
-      author: ""
-      category: ""
-      exclude_featured: false
-      exclude_future: false
-      exclude_past: false
-      folders:
-      - post
-      publication_type: ""
-      tag: ""
-    offset: 0
-    order: desc
-    subtitle: ""
-    text: ""
-    title: Recent Posts
-  design:
-    columns: "2"
-    view: compact
-  id: posts
 - block: portfolio
   content:
     buttons:
@@ -167,6 +145,28 @@ sections:
     flip_alt_rows: false
     view: showcase
   id: projects
+- block: collection
+  content:
+    count: 5
+    filters:
+      author: ""
+      category: ""
+      exclude_featured: false
+      exclude_future: false
+      exclude_past: false
+      folders:
+      - post
+      publication_type: ""
+      tag: ""
+    offset: 0
+    order: desc
+    subtitle: ""
+    text: ""
+    title: News
+  design:
+    columns: "2"
+    view: compact
+  id: posts
 # - block: collection
 #   content:
 #     filters:

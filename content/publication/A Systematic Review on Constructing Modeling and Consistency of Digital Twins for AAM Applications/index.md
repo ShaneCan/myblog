@@ -11,26 +11,26 @@ authors:
 - Hartmut Fricke
 - Uwe Aßmann
 date: "2025-03-30"
-# doi: "https://doi.org/10.1016/j.aej.2024.03.003"
+doi: "https://doi.org/10.3390/drones9060394"
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
 projects: []
-publication: 'Submitted to Drones'
+publication: 'Drones'
 publication_short: ""
 publication_types:
 - "2"
-# publishDate: "2024-03-13"
+publishDate: "2025-05-24"
 slides: A Systematic Review on Constructing Modeling and Consistency of Digital Twins for AAM Applications.
 summary: This review comprehensively analyzes advancements in Cyber-Physical Systems (CPS) and DT technologies, focusing on UAV DT framework construction, geometric modeling, physical modeling, behavioral modeling, rule modeling, and cyber-physical consistency assurance in AAM applications. 
 tags:
 - Source Themes
-title: A Scoping Review on Constructing, Modeling and Consistency of Digital Twins for AAM Applications
+title: A Review on Constructing, Modeling and Consistency of Digital Twins for AAM Applications
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
-# url_pdf: https://www.sciencedirect.com/science/article/pii/S1110016824002205
+url_pdf: https://mdpi-res.com/d_attachment/drones/drones-09-00394/article_deploy/drones-09-00394.pdf?version=1748093258
 # url_poster: ""
 # url_project: ""
 # url_slides: ""

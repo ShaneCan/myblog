@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "2022-11-16T00:00:00Z"
 slides: Wingtip Detection-based Aircraft Gate Taxi-in Conflict Determination
-summary: Use CV to solve Aircraft wingtips safety problem. (Focus on the possible effects of different vehicle speeds and different aircraft wingspans.)
+#summary: Use CV to solve Aircraft wingtips safety problem. (Focus on the possible effects of different vehicle speeds and different aircraft wingspans.)
 tags:
 - Source Themes
 title: Wingtip Detection-based Aircraft Gate Taxi-in Conflict Determination (In Chinese)

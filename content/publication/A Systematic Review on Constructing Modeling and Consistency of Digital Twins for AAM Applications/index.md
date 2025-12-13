@@ -24,7 +24,7 @@ publication_types:
 - "2"
 publishDate: "2025-05-24"
 slides: A Systematic Review on Constructing Modeling and Consistency of Digital Twins for AAM Applications.
-summary: This review comprehensively analyzes advancements in Cyber-Physical Systems (CPS) and DT technologies, focusing on UAV DT framework construction, geometric modeling, physical modeling, behavioral modeling, rule modeling, and cyber-physical consistency assurance in AAM applications. 
+#summary: This review comprehensively analyzes advancements in Cyber-Physical Systems (CPS) and DT technologies, focusing on UAV DT framework construction, geometric modeling, physical modeling, behavioral modeling, rule modeling, and cyber-physical consistency assurance in AAM applications. 
 tags:
 - Source Themes
 title: A Review on Constructing, Modeling and Consistency of Digital Twins for AAM Applications

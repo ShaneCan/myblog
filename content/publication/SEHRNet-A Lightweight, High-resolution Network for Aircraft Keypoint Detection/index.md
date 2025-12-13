@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "2024-04-25T00:00:00Z"
 slides: SEHRNet - A Lightweight, High-Resolution Network for Aircraft Keypoint Detection
-summary: Improved performance of keypoint detection networks.
+#summary: Improved performance of keypoint detection networks.
 tags:
 - Source Themes
 title: SEHRNet - A Lightweight, High-Resolution Network for Aircraft Keypoint Detection

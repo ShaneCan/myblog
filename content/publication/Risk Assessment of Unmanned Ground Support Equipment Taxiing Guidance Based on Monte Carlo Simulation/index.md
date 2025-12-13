@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "2024-04-29"
 slides: Monte Carlo Simulation Based Risk Assessment for Unmanned Ground Equipment Taxiing Guidance
-summary: Investigating the use of unmanned guidance vehicles for safer aircraft taxiing, presenting a data driven simulation approach that introduces new risk assessment indicators for effective risk mitigation.
+#summary: Investigating the use of unmanned guidance vehicles for safer aircraft taxiing, presenting a data driven simulation approach that introduces new risk assessment indicators for effective risk mitigation.
 tags:
 - Source Themes
 title: Monte Carlo Simulation Based Risk Assessment for Unmanned Ground Equipment Taxiing Guidance

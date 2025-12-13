@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "2022-11-16T00:00:00Z"
 slides: Research on Conflict Detection Model for Taxi‐in Process on the Apron Based on Aircraft Wingtip Keypoint Detection
-summary: Use CV to solve Apron safety problem.(Focus on wingtip scraping between aircraft and the possible impact of different vehicle heights.)
+#summary: Use CV to solve Apron safety problem.(Focus on wingtip scraping between aircraft and the possible impact of different vehicle heights.)
 tags:
 - Source Themes
 title: Research on Conflict Detection Model for Taxi‐in Process on the Apron Based on Aircraft Wingtip Keypoint Detection

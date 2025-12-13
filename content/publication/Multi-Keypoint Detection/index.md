@@ -23,7 +23,7 @@ publication_types:
 - "2"
 publishDate: "Acceptance pending publication"
 slides: A Multi-Keypoint Detection Based Method for Conflict Determination between Aircraft and Vehicles on the Apron Gate
-summary: Addressing the gap in existing research that fails to identify critical aircraft components and the lack of studies on collision warnings between aircraft and vehicles.
+#summary: Addressing the gap in existing research that fails to identify critical aircraft components and the lack of studies on collision warnings between aircraft and vehicles.
 tags:
 - Source Themes
 title: A Multi-Keypoint Detection Based Method for Conflict Determination between Aircraft and Vehicles on the Apron Gate (In Chinese)

@@ -23,7 +23,7 @@ publication_types:
 - "2"
 # publishDate: "2025-05-24"
 slides: Bigraph-based Digital Twin for Multi UAV Landing Management.
-summary: A bigraph-based digital twin framework for coordinating safe multi-UAV landing operations in Innovative Air Mobility scenarios.
+#summary: A bigraph-based digital twin framework for coordinating safe multi-UAV landing operations in Innovative Air Mobility scenarios.
 tags:
 - Source Themes
 title: Bigraph-based Digital Twin for Multi UAV Landing Management

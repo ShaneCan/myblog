@@ -24,7 +24,7 @@ publication_types:
 - "2"
 publishDate: "2024-03-13"
 slides: Aircraft engine danger areas incursion detection using keypoint detection and IoT
-summary: To mitigate the risk of irreversible damage caused by aircraft engines to equipment and personnel, addressing the scarcity of research on visualizing engine danger zones and conflict prevention.
+#summary: To mitigate the risk of irreversible damage caused by aircraft engines to equipment and personnel, addressing the scarcity of research on visualizing engine danger zones and conflict prevention.
 tags:
 - Source Themes
 title: Aircraft engine danger areas incursion detection using keypoint detection and IoT

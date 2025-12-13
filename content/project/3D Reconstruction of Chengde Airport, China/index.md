@@ -4,7 +4,7 @@ external_link: https://drive.google.com/file/d/1ywFavka2pei1kfYdcWDiglYgeORg0cKx
 image:
   caption: Chengde Airport
   focal_point: Smart
-summary: A 3D point cloud reconstruction and editing of Chengde Airport in China was completed using aerial images captured by drones, video link= `https://drive.google.com/file/d/1ywFavka2pei1kfYdcWDiglYgeORg0cKx/view?usp=sharing`.
+summary: A 3D point cloud reconstruction and editing of Chengde Airport in China was completed using aerial images captured by drones.
 tags:
 - Deep Learning
 title: 3D Reconstruction of Chengde Airport, China

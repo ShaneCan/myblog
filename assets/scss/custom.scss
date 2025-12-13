@@ -1,5 +1,55 @@
 // 自定义样式：使布局更紧凑和学术化
 
+// 全局字体优化：更紧凑、更学术化
+body {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.01em !important;
+}
+
+// 标题字体优化
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.3 !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+h1 {
+  font-size: 1.6rem !important;
+}
+
+h2 {
+  font-size: 1.4rem !important;
+}
+
+h3 {
+  font-size: 1.2rem !important;
+}
+
+h4 {
+  font-size: 1.1rem !important;
+}
+
+// 段落和文本优化
+p {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0.7rem !important;
+}
+
+// 列表字体优化
+ul, ol {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  
+  li {
+    margin-bottom: 0.3rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
 // 限制内容宽度，增加左右边距，使其更像学术CV
 // 针对landing page的container
 .home-section .container {
@@ -84,7 +134,8 @@
 }
 
 // 紧凑的项目卡片样式
-.project-card {
+.project-card,
+.card {
   margin-bottom: 1rem !important;
   
   .card-title {
@@ -95,6 +146,157 @@
   .card-text {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
+  }
+  
+  // 缩小项目图片
+  .card-img-top,
+  img {
+    max-height: 100px !important;
+    max-width: 200px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}
+
+// Projects showcase视图的图片优化
+.wg-portfolio {
+  .card {
+    .card-img-top {
+      max-height: 100px !important;
+      object-fit: cover !important;
+      width: auto !important;
+    }
+  }
+  
+  // 项目展示图片
+  .project-card img,
+  .card img {
+    max-height: 100px !important;
+    object-fit: cover !important;
+    width: auto !important;
+  }
+  
+  // Showcase视图中的图片（Projects主要使用的视图）
+  .view-showcase {
+    // 保持垂直居中对齐，防止换行
+    .row {
+      align-items: center !important;
+      flex-wrap: nowrap !important;
+      display: flex !important;
+    }
+    
+    // 图片列：不占满宽度，只占图片实际宽度
+    .col-md-6.order-first {
+      flex: 0 0 auto !important;
+      width: auto !important;
+      max-width: none !important;
+      padding-right: 1rem !important;
+      flex-shrink: 0 !important;
+      
+      img {
+        max-height: 120px !important;
+        max-width: 200px !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
+      }
+    }
+    
+    // 当图片在右侧时（order-md-2的情况）
+    .col-md-6.order-md-2 {
+      flex: 0 0 auto !important;
+      width: auto !important;
+      max-width: none !important;
+      padding-left: 1rem !important;
+      padding-right: 0 !important;
+      flex-shrink: 0 !important;
+      
+      img {
+        max-height: 120px !important;
+        max-width: 200px !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
+      }
+    }
+    
+    // 文字列：紧挨着图片，从左边开始，保持垂直居中，不换行
+    // 选择不包含order-first和order-md-2的col-md-6（即文字列）
+    .col-md-6:not(.order-first):not(.order-md-2) {
+      flex: 1 1 auto !important;
+      padding-left: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      min-width: 0 !important; // 允许flex子元素缩小
+      max-width: none !important; // 移除最大宽度限制
+      width: auto !important; // 自动宽度
+      flex-shrink: 1 !important; // 允许缩小但不要换行
+      flex-grow: 1 !important; // 可以增长
+      
+      // 文字列内的内容不要有宽度限制
+      > * {
+        max-width: none !important;
+        width: auto !important;
+      }
+      
+      // 确保文字内容可以正常换行，但不要提前换行
+      .article-title,
+      .article-style,
+      .section-subheading {
+        max-width: none !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+      }
+    }
+    
+    // 通用图片样式
+    img {
+      max-height: 120px !important;
+      max-width: 200px !important;
+      width: auto !important;
+      height: auto !important;
+      object-fit: cover !important;
+    }
+    
+    // 确保在所有屏幕尺寸下都不换行
+    @media (max-width: 767px) {
+      .row {
+        flex-wrap: nowrap !important;
+      }
+      
+      .col-md-6 {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        max-width: none !important;
+      }
+      
+      // 小屏幕时文字列也要紧贴图片
+      .col-md-6:not(.order-first):not(.order-md-2) {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+      }
+    }
+  }
+}
+
+// News/Posts中的图片优化
+.article-list-item,
+.pub-list-item {
+  img {
+    max-height: 120px !important;
+    max-width: 200px !important;
+    object-fit: cover !important;
+  }
+  
+  .article-banner,
+  .featured-image {
+    max-height: 150px !important;
+    object-fit: cover !important;
   }
 }
 
@@ -117,8 +319,23 @@
     line-height: 1.6 !important;
   }
   
-  // 确保Interests和Education横向显示
-  .row {
+  // 确保在小屏幕上，头像和Bio内容上下排列
+  .container > .row {
+    @media (max-width: 991px) {
+      flex-direction: column !important;
+      
+      > .col-lg-4,
+      > .col-lg-8 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+  
+  // 确保Interests和Education横向显示，字体更小
+  // 只针对包含Interests和Education的内部row
+  .col-lg-8 > .row {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -128,11 +345,21 @@
       flex: 0 0 auto !important;
       width: auto !important;
       max-width: none !important;
-      margin-right: 3rem !important;
+      margin-right: 2rem !important;
       
-      @media (max-width: 768px) {
-        margin-right: 1.5rem !important;
-        flex: 0 0 40% !important;
+      .section-subheading {
+        font-size: 0.85rem !important;
+        font-weight: 600 !important;
+        margin-bottom: 0.5rem !important;
+      }
+      
+      .ul-interests {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+        
+        li {
+          margin-bottom: 0.2rem !important;
+        }
       }
     }
     
@@ -142,8 +369,31 @@
       width: auto !important;
       max-width: none !important;
       
-      @media (max-width: 768px) {
-        flex: 0 0 55% !important;
+      .section-subheading {
+        font-size: 0.85rem !important;
+        font-weight: 600 !important;
+        margin-bottom: 0.5rem !important;
+      }
+      
+      .ul-edu {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+        
+        li {
+          margin-bottom: 0.4rem !important;
+          
+          .description {
+            p.course {
+              font-size: 0.8rem !important;
+              line-height: 1.3 !important;
+            }
+            
+            p.institution {
+              font-size: 0.75rem !important;
+              line-height: 1.3 !important;
+            }
+          }
+        }
       }
     }
   }
@@ -203,15 +453,36 @@
   }
 }
 
-// 减少段落间距
-p {
-  margin-bottom: 0.75rem !important;
+// 导航栏字体优化
+.navbar {
+  font-size: 0.85rem !important;
+  
+  .nav-link {
+    font-size: 0.85rem !important;
+    letter-spacing: -0.01em !important;
+    padding: 0.4rem 0.6rem !important;
+  }
 }
 
-// 减少标题间距
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 1rem !important;
-  margin-bottom: 0.5rem !important;
+// 元数据字体优化（日期、作者等）
+.article-metadata {
+  font-size: 0.85rem !important;
+  line-height: 1.4 !important;
+}
+
+// 卡片和容器字体优化
+.card {
+  font-size: 0.9rem !important;
+  
+  .card-title {
+    font-size: 1.1rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .card-text {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
 }
 
 // 紧凑的列表样式
@@ -256,40 +527,56 @@ ul, ol {
     margin-right: auto !important;
     padding-left: 3rem !important;
     padding-right: 3rem !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  // 确保导航菜单居中
-  .navbar-collapse {
-    justify-content: center !important;
-    align-items: center !important;
-    display: flex !important;
-  }
-  
-  // 确保导航菜单项垂直居中
-  .navbar-nav {
-    display: flex !important;
-    align-items: center !important;
     
-    .nav-item {
+    @media (min-width: 992px) {
       display: flex !important;
       align-items: center !important;
-    }
-    
-    .nav-link {
-      display: flex !important;
-      align-items: center !important;
-      line-height: 1 !important;
+      justify-content: center !important;
     }
   }
   
-  // 针对小屏幕设备，减少左右边距
-  @media (max-width: 768px) {
+  // 确保导航菜单居中（仅在大屏幕上）
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      justify-content: center !important;
+      align-items: center !important;
+      display: flex !important;
+    }
+  }
+  
+  // 确保导航菜单项垂直居中（仅在大屏幕上）
+  @media (min-width: 992px) {
+    .navbar-nav {
+      display: flex !important;
+      align-items: center !important;
+      
+      .nav-item {
+        display: flex !important;
+        align-items: center !important;
+      }
+      
+      .nav-link {
+        display: flex !important;
+        align-items: center !important;
+        line-height: 1 !important;
+      }
+    }
+  }
+  
+  // 针对小屏幕设备，减少左右边距，并确保折叠功能正常
+  @media (max-width: 991px) {
     .container-xl {
       padding-left: 1.5rem !important;
       padding-right: 1.5rem !important;
+    }
+    
+    // 确保在小屏幕上不强制显示，允许Bootstrap的折叠功能
+    .navbar-collapse {
+      display: none !important;
+      
+      &.show {
+        display: block !important;
+      }
     }
   }
 }

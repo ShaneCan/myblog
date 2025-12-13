@@ -4,8 +4,8 @@ external_link: https://drive.google.com/file/d/1Yea-FxxpoLUqcawxDfm_9Mo3k4-A7EMz
 image:
   caption: Aircraft in CAFUC
   focal_point: Smart
-summary: This is a 3D reconstruction demo of a CAFUC on-campus aircraft (TB-20) using 3D Gaussian Splitting and Unreal Engine 5, video link= `https://drive.google.com/file/d/1Yea-FxxpoLUqcawxDfm_9Mo3k4-A7EMz/view?usp=sharing`.
+summary: Creating realistic 3D model of CAFUC on-campus aircraft.
 tags:
 - Deep Learning
-title: A demo of 3D Gaussian Splitting and Unreal Engine 5
+title: 3D reconstruction of TB-20 aircraft using 3D Gaussian Splitting and Unreal Engine 5
 ---

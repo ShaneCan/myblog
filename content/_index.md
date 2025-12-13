@@ -5,6 +5,9 @@ sections:
   content:
     title: Biography
     username: admin
+  design:
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
   id: about
 # - block: experience
 #   content:
@@ -123,8 +126,10 @@ sections:
     text: ""
     title: Selected Publications
   design:
-    columns: "2"
+    columns: "1"
     view: compact
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
   id: publications
 - block: portfolio
   content:
@@ -144,6 +149,8 @@ sections:
     columns: "1"
     flip_alt_rows: false
     view: showcase
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
   id: projects
 - block: collection
   content:
@@ -164,8 +171,10 @@ sections:
     text: ""
     title: News
   design:
-    columns: "2"
+    columns: "1"
     view: compact
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
   id: posts
 # - block: collection
 #   content:
@@ -185,6 +194,8 @@ sections:
     title: Gallery
   design:
     columns: "1"
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
     id: gallery
 # - block: collection
 #   content:
@@ -209,7 +220,7 @@ sections:
       country_code: DE
       postcode: "01069"
       region: Germany
-      street: 2098, Andreas-Pfitzmann-Bau (APB), Nöthnitzer Strasse 46
+      street: 2081, Andreas-Pfitzmann-Bau (APB), Nöthnitzer Strasse 46
     # appointment_url: https://calendly.com
     autolink: true
     contact_links:
@@ -226,7 +237,7 @@ sections:
     #   link: https://zoom.com
     #   name: Zoom Me
     # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-    email: tianxiong.zhang@tu-dresden.de
+    email: tianxiong.zhang[at]tu-dresden.de
     # form:
     #   formspree:
     #     id: null
@@ -242,7 +253,9 @@ sections:
     #   ut magna et, vehicula efficitur enim.
     title: Contact
   design:
-    columns: "2"
+    columns: "1"
+    spacing:
+      padding: ["20px", "0", "20px", "0"]
   id: contact
 title: null
 type: landing

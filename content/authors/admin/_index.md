@@ -48,7 +48,7 @@ social:
 status:
   icon: ☕️
 superuser: true
-title: Tianxiong Zhang ， 張天雄
+title: Tianxiong Zhang
 ---
 
 I am a research assistant at the [Chair of Software Technology (ST group)](https://tu-dresden.de/ing/informatik/smt/st), Technische Universität Dresden, where I am pursuing my PhD under the guidance of [Prof. Uwe Aßmann](http://www1.inf.tu-dresden.de/~ua1/). I am also a member of the project [RTG 2947 „AirMetro“](https://tu-dresden.de/bu/verkehr/airmetro/rtg-2947-ueberblick), leading by [Prof. Hartmut Fricke](https://tu-dresden.de/bu/verkehr/ila/ifl/die-professur/staff/Hartmut_Fricke). Currently, my research focus is ensuring cyber-physical consistency in digital twin simulations for Unmanned Aerial Vehicles (UAVs). With a deep-seated passion for the transportation sector, I am particularly interested in leveraging simulation to address and mitigate traffic safety challenges.

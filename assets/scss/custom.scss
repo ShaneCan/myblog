@@ -1,0 +1,302 @@
+// 自定义样式：使布局更紧凑和学术化
+
+// 限制内容宽度，增加左右边距，使其更像学术CV
+// 针对landing page的container
+.home-section .container {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+// 限制文章内容宽度
+.article-container {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+// 针对小屏幕设备，减少左右边距
+@media (max-width: 768px) {
+  .home-section .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .article-container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+// 减少首页各部分的间距
+.home-section {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  
+  .section-heading {
+    margin-bottom: 1rem !important;
+    // 不修改标题字体大小，保持与导航栏对齐
+  }
+}
+
+// 紧凑的出版物列表样式
+.pub-list-item {
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  
+  .article-title {
+    margin-bottom: 0.25rem !important;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .article-metadata {
+    margin-bottom: 0.25rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  .article-style {
+    margin-top: 0.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+// 紧凑的新闻/博客列表样式
+.article-list-item {
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  
+  .article-title {
+    margin-bottom: 0.25rem !important;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .article-metadata {
+    margin-bottom: 0.25rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+// 紧凑的项目卡片样式
+.project-card {
+  margin-bottom: 1rem !important;
+  
+  .card-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .card-text {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+// 减少关于部分的间距
+.wg-about-biography,
+.about-widget {
+  .portrait-title h2 {
+    margin-bottom: 0.5rem !important;
+    font-size: 1.5rem !important;
+  }
+  
+  .portrait-title h3 {
+    margin-bottom: 0.5rem !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .article-style {
+    margin-top: 0.5rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  // 确保Interests和Education横向显示
+  .row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    
+    // Interests列
+    > .col-md-5 {
+      flex: 0 0 auto !important;
+      width: auto !important;
+      max-width: none !important;
+      margin-right: 3rem !important;
+      
+      @media (max-width: 768px) {
+        margin-right: 1.5rem !important;
+        flex: 0 0 40% !important;
+      }
+    }
+    
+    // Education列
+    > .col-md-7 {
+      flex: 0 0 auto !important;
+      width: auto !important;
+      max-width: none !important;
+      
+      @media (max-width: 768px) {
+        flex: 0 0 55% !important;
+      }
+    }
+  }
+}
+
+// 紧凑的联系信息样式
+.contact-widget {
+  .contact-widget-item {
+    margin-bottom: 0.5rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+// Gallery图片样式：竖图改为正方形，宽屏保持不变
+.gallery-grid {
+  // 确保所有非full的图片都显示为正方形
+  .gallery-item {
+    // 默认正方形（span 1行）
+    grid-row-end: span 3 !important;
+  }
+  
+  // medium和large也改为正方形
+  .gallery-item--medium,
+  .gallery-item--large {
+    grid-row-end: span 2 !important;
+  }
+  
+  // full（宽屏）保持不变
+  .gallery-item--full {
+    // 保持原有的宽屏样式
+    @media screen and (min-width: 768px) {
+      grid-column: 1/-1 !important;
+      grid-row-end: span 2 !important;
+    }
+  }
+  
+  // 确保所有图片都使用cover模式填充
+  .gallery-item img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+// 减少图库的间距
+.gallery {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+// 减少卡片之间的间距
+.card {
+  margin-bottom: 1rem !important;
+  
+  .card-body {
+    padding: 1rem !important;
+  }
+}
+
+// 减少段落间距
+p {
+  margin-bottom: 0.75rem !important;
+}
+
+// 减少标题间距
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+// 紧凑的列表样式
+ul, ol {
+  margin-bottom: 0.75rem !important;
+  
+  li {
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+// Education部分行间距调整
+.ul-edu {
+  li {
+    margin-bottom: 0.5rem !important;
+    
+    .description {
+      margin-bottom: 0 !important;
+      
+      p.course {
+        margin-bottom: 0.1rem !important;
+        line-height: 1.3 !important;
+      }
+      
+      p.institution {
+        margin-bottom: 0 !important;
+        line-height: 1.3 !important;
+      }
+    }
+  }
+}
+
+// 紧凑的导航栏，限制宽度并居中
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  
+  // 限制导航栏容器宽度，使其与页面内容宽度一致
+  .container-xl {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  // 确保导航菜单居中
+  .navbar-collapse {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+  }
+  
+  // 确保导航菜单项垂直居中
+  .navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+    
+    .nav-item {
+      display: flex !important;
+      align-items: center !important;
+    }
+    
+    .nav-link {
+      display: flex !important;
+      align-items: center !important;
+      line-height: 1 !important;
+    }
+  }
+  
+  // 针对小屏幕设备，减少左右边距
+  @media (max-width: 768px) {
+    .container-xl {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+}
+
+// 减少页脚间距
+.site-footer {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+

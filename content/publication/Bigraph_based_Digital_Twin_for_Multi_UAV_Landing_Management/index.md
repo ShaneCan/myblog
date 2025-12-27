@@ -9,8 +9,8 @@ authors:
 - Martin Lindner
 - Hartmut Fricke
 - Uwe Aßmann
-date: "2025-11-30"
-# doi: "https://doi.org/10.3390/drones9060394"
+date: "2025-12-20"
+doi: "https://doi.org/10.3390/drones10010012"
 featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
@@ -21,15 +21,15 @@ publication: 'Drones'
 publication_short: ""
 publication_types:
 - "2"
-# publishDate: "2025-05-24"
-slides: Bigraph-based Digital Twin for Multi UAV Landing Management.
+publishDate: "2025-12-26"
+slides: A Bigraph-Based Digital Twin for Multi-UAV Landing Management
 #summary: A bigraph-based digital twin framework for coordinating safe multi-UAV landing operations in Innovative Air Mobility scenarios.
 tags:
 - Source Themes
-title: Bigraph-based Digital Twin for Multi UAV Landing Management
+title: A Bigraph-Based Digital Twin for Multi-UAV Landing Management
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: ""
-# url_pdf: https://mdpi-res.com/d_attachment/drones/drones-09-00394/article_deploy/drones-09-00394.pdf?version=1748093258
+url_pdf: https://www.mdpi.com/2504-446X/10/1/12/pdf
 # url_poster: ""
 # url_project: ""
 # url_slides: ""

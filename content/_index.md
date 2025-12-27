@@ -3,7 +3,7 @@ date: "2022-10-24"
 sections:
 - block: about.biography
   content:
-    title: Biography
+    title: About
     username: admin
   design:
     spacing:

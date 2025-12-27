@@ -2,7 +2,7 @@
 bio: My research interests include Digital Twin, Computer Vision, Urban Air Mobility (UAM).
 education:
   courses:
-  - course: Ph.D. Candidate
+  - course: Ph.D. Candidate in Computer Science
     institution: Technische Universität Dresden
   - course: Master of Transportation
     institution: Civil Aviation Flight University of China
@@ -21,7 +21,7 @@ last_name: Zhang
 organizations:
 - name: Technische Universität Dresden
   url: https://tu-dresden.de
-role: PhD Candidate
+role: PhD Researcher
 social:
 - icon: envelope
   icon_pack: fas
@@ -51,5 +51,5 @@ superuser: true
 title: Tianxiong Zhang
 ---
 
-I am a research assistant at the [Chair of Software Technology (ST group)](https://tu-dresden.de/ing/informatik/smt/st), Technische Universität Dresden, where I am pursuing my PhD under the guidance of [Prof. Uwe Aßmann](http://www1.inf.tu-dresden.de/~ua1/). I am also a member of the project [RTG 2947 „AirMetro“](https://tu-dresden.de/bu/verkehr/airmetro/rtg-2947-ueberblick), leading by [Prof. Hartmut Fricke](https://tu-dresden.de/bu/verkehr/ila/ifl/die-professur/staff/Hartmut_Fricke). Currently, my research focus is ensuring cyber-physical consistency in digital twin simulations for Unmanned Aerial Vehicles (UAVs). With a deep-seated passion for the transportation sector, I am particularly interested in leveraging simulation to address and mitigate traffic safety challenges.
+I am a research assistant at the [Chair of Software Technology (ST group)](https://tu-dresden.de/ing/informatik/smt/st), Technische Universität Dresden, where I am pursuing my PhD under the guidance of [Prof. Uwe Aßmann](http://www1.inf.tu-dresden.de/~ua1/). I am also a member of the project [RTG 2947 „AirMetro“](https://tu-dresden.de/bu/verkehr/airmetro/rtg-2947-ueberblick), leading by [Prof. Hartmut Fricke](https://tu-dresden.de/bu/verkehr/ila/ifl/die-professur/staff/Hartmut_Fricke). Currently, my research focuses on applying formal modeling methods to digital twins for Advanced Air Mobility (AAM) operations. Driven by a long-standing interest in transportation systems, I am especially motivated to address safety-critical challenges in complex aerial traffic environments.
 {style="text-align: justify;"}

@@ -9730,6 +9730,11 @@ ul, ol {
   padding-bottom: 1.5rem !important; }
   .home-section .section-heading {
     margin-bottom: 1rem !important; }
+  .home-section:nth-of-type(even) {
+    background: #f0f4f8 !important; }
+
+.dark .home-section:nth-of-type(even) {
+  background: #2a2f3a !important; }
 
 .pub-list-item {
   margin-bottom: 0.75rem !important;
@@ -10045,6 +10050,13 @@ ul, ol {
     .navbar .nav-link.active {
       color: #fff !important;
       font-weight: bold !important; }
+  .dark .navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important; }
+    .dark .navbar .nav-link:hover, .dark .navbar .nav-link:focus {
+      color: #fff !important; }
+    .dark .navbar .nav-link.active {
+      color: #88a1e6 !important;
+      font-weight: bold !important; }
   .navbar .navbar-toggler {
     color: #fff !important;
     border-color: rgba(255, 255, 255, 0.3) !important; }
@@ -10082,9 +10094,43 @@ ul, ol {
       padding-left: 1.5rem !important;
       padding-right: 1.5rem !important; }
     .navbar .navbar-collapse {
-      display: none !important; }
+      display: none !important;
+      background-color: #fff !important; }
       .navbar .navbar-collapse.show {
-        display: block !important; } }
+        display: block !important;
+        background-color: #fff !important; }
+    .navbar .navbar-collapse .nav-link {
+      color: #333 !important; }
+      .navbar .navbar-collapse .nav-link:hover, .navbar .navbar-collapse .nav-link:focus {
+        color: #000 !important; }
+      .navbar .navbar-collapse .nav-link.active {
+        color: #88a1e6 !important;
+        font-weight: bold !important; }
+    .navbar #navbar-main .main-menu-item .nav-link {
+      color: #333 !important; }
+      .navbar #navbar-main .main-menu-item .nav-link:hover, .navbar #navbar-main .main-menu-item .nav-link:focus {
+        color: #000 !important; }
+      .navbar #navbar-main .main-menu-item .nav-link.active {
+        color: #88a1e6 !important;
+        font-weight: bold !important; }
+    .dark .navbar .navbar-collapse {
+      background-color: #282a36 !important; }
+      .dark .navbar .navbar-collapse.show {
+        background-color: #282a36 !important; }
+    .dark .navbar .navbar-collapse .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important; }
+      .dark .navbar .navbar-collapse .nav-link:hover, .dark .navbar .navbar-collapse .nav-link:focus {
+        color: #fff !important; }
+      .dark .navbar .navbar-collapse .nav-link.active {
+        color: #88a1e6 !important;
+        font-weight: bold !important; }
+    .dark .navbar #navbar-main .main-menu-item .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important; }
+      .dark .navbar #navbar-main .main-menu-item .nav-link:hover, .dark .navbar #navbar-main .main-menu-item .nav-link:focus {
+        color: #fff !important; }
+      .dark .navbar #navbar-main .main-menu-item .nav-link.active {
+        color: #88a1e6 !important;
+        font-weight: bold !important; } }
 .site-footer {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }

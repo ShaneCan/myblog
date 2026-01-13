@@ -91,6 +91,16 @@ ul, ol {
     margin-bottom: 1rem !important;
     // 不修改标题字体大小，保持与导航栏对齐
   }
+  
+  // 将灰色板块改为更高级的浅灰蓝色
+  &:nth-of-type(even) {
+    background: #f0f4f8 !important; // 浅灰蓝色，更高级
+  }
+}
+
+// 深色主题下的偶数板块背景色
+.dark .home-section:nth-of-type(even) {
+  background: #2a2f3a !important; // 深色主题下的深灰蓝色
 }
 
 // 紧凑的出版物列表样式
@@ -552,6 +562,23 @@ ul, ol {
     }
   }
   
+  // 深色主题下导航栏激活状态改为蓝色
+  .dark & {
+    .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      
+      &:hover,
+      &:focus {
+        color: #fff !important;
+      }
+      
+      &.active {
+        color: #88a1e6 !important; // 深色主题下激活状态为蓝色
+        font-weight: bold !important;
+      }
+    }
+  }
+  
   // 导航栏切换按钮颜色
   .navbar-toggler {
     color: #fff !important;
@@ -615,9 +642,80 @@ ul, ol {
     // 确保在小屏幕上不强制显示，允许Bootstrap的折叠功能
     .navbar-collapse {
       display: none !important;
+      background-color: #fff !important; // 白色背景
       
       &.show {
         display: block !important;
+        background-color: #fff !important; // 展开时也保持白色背景
+      }
+    }
+    
+    // 小屏幕下折叠菜单中的导航链接文字颜色改为黑色
+    .navbar-collapse .nav-link {
+      color: #333 !important;
+      
+      &:hover,
+      &:focus {
+        color: #000 !important;
+      }
+      
+      &.active {
+        color: #88a1e6 !important; // 激活状态为蓝色
+        font-weight: bold !important;
+      }
+    }
+    
+    // 确保小屏幕下的导航菜单项文字可见
+    #navbar-main .main-menu-item .nav-link {
+      color: #333 !important;
+      
+      &:hover,
+      &:focus {
+        color: #000 !important;
+      }
+      
+      &.active {
+        color: #88a1e6 !important; // 激活状态为蓝色
+        font-weight: bold !important;
+      }
+    }
+    
+    // 深色主题下小屏幕折叠菜单的文字颜色
+    .dark & {
+      .navbar-collapse {
+        background-color: #282a36 !important; // 深色背景
+        
+        &.show {
+          background-color: #282a36 !important;
+        }
+      }
+      
+      .navbar-collapse .nav-link {
+        color: rgba(255, 255, 255, 0.9) !important;
+        
+        &:hover,
+        &:focus {
+          color: #fff !important;
+        }
+        
+        &.active {
+          color: #88a1e6 !important; // 深色主题下激活状态为蓝色
+          font-weight: bold !important;
+        }
+      }
+      
+      #navbar-main .main-menu-item .nav-link {
+        color: rgba(255, 255, 255, 0.9) !important;
+        
+        &:hover,
+        &:focus {
+          color: #fff !important;
+        }
+        
+        &.active {
+          color: #88a1e6 !important; // 深色主题下激活状态为蓝色
+          font-weight: bold !important;
+        }
       }
     }
   }

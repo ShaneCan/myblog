@@ -144,7 +144,7 @@ sections:
     filters:
       folders:
       - project
-    title: Projects
+    title: Demonstrations
   design:
     columns: "1"
     flip_alt_rows: false
@@ -248,7 +248,7 @@ sections:
     # - Monday 10:00 to 13:00
     # - Wednesday 09:00 to 10:00
     # phone: +86 15934146183
-    subtitle: null
+    subtitle: I am happy to supervise Bachelor’s and Master’s theses on topics such as digital twins, computer vision, and robotics, particularly in the context of air transportation. Feel free to contact me!
     # text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
     #   ut magna et, vehicula efficitur enim.
     title: Contact

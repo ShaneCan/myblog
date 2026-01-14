@@ -9908,8 +9908,14 @@ ul, ol {
 .wg-about-biography .article-style,
 .about-widget .article-style {
   margin-top: 0.5rem !important;
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important; }
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important; }
+
+.wg-about-biography .article-style p,
+.about-widget .article-style p {
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0.8rem !important; }
 
 @media (max-width: 991px) {
   .wg-about-biography .container > .row,

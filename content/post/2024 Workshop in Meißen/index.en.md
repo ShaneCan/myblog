@@ -19,6 +19,6 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Workshop in Meißen"
+summary: "2024 AirMetro Winter Workshop"
 ---
 ## Group photo of RTG AirMetro members in Meißen.

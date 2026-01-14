@@ -19,6 +19,6 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Attend AFC 2024"
+summary: "1ST AEROSPACE FRONTIERS CONFERENCE"
 ---
 ## Attend 1ST AEROSPACE FRONTIERS CONFERENCE.

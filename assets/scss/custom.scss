@@ -340,8 +340,15 @@ ul, ol {
   
   .article-style {
     margin-top: 0.5rem !important;
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
+    font-size: 1.05rem !important; // 增大字体，使其更协调
+    line-height: 1.7 !important; // 增加行高，提高可读性
+  }
+  
+  // Bio部分的段落文字
+  .article-style p {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0.8rem !important;
   }
   
   // 确保在小屏幕上，头像和Bio内容上下排列

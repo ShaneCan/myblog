@@ -19,7 +19,7 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Our paper *A Bigraph-Based Digital Twin for Multi-UAV Landing Management* has been selected as the cover paper."
+summary: "Our paper *A Bigraph-Based Digital Twin for Multi-UAV Landing Management* has been selected as the cover paper from over 50 submissions."
 ---
 ## Our paper: A Bigraph-Based Digital Twin for Multi-UAV Landing Management, authored by Tianxiong Zhang, Dominik Grzelak, Martin Lindner, Hartmut Fricke and Uwe Aßmann, was selected as the cover article for Drones, Volume 10, Issue 1, from over 50 contributions.
 

@@ -19,6 +19,6 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Attend ICUS 2023"
+summary: "The 6th IEEE International Conference on Unmanned Systems"
 ---
 ## Attend The 6th IEEE International Conference on Unmanned Systems, ICUS 2023.

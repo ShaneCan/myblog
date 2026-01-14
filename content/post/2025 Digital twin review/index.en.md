@@ -19,7 +19,7 @@ image:
   placement: 2
   preview_only: false
 projects: []
-summary: "Our paper *A Review on the Construction, Modeling, and Consistency of Digital Twins for Advanced Air Mobility Applications* has been selected as the cover paper."
+summary: "Our paper *A Review on the Construction, Modeling, and Consistency of Digital Twins for Advanced Air Mobility Applications* has been selected as the cover paper from over 60 submissions."
 ---
 ## Our paper: A Review on the Construction, Modeling, and Consistency of Digital Twins for Advanced Air Mobility Applications, authored by Tianxiong Zhang, Dominik Grzelak, Wanqi Zhao, Md Ashraful Islam, Hartmut Fricke and Uwe Aßmann, was selected as the cover article for *Drones*, Volume 9, Issue 6, from among more than 60 contributions.
 

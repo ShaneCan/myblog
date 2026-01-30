@@ -1,6 +1,29 @@
-// 自定义样式：使布局更紧凑和学术化
+// 自定义样式：使布局更紧凑和学术化，兼具科技感与高级感
 
-// 全局字体优化：更紧凑、更学术化
+// ========== 科技感配色与变量 ==========
+:root {
+  --tech-primary: #88a1e6;
+  --tech-primary-rgb: 136, 161, 230;
+  --tech-accent: #5b7fd6;
+  --tech-glow: rgba(136, 161, 230, 0.35);
+  --tech-border: rgba(136, 161, 230, 0.25);
+  --tech-bg-soft: #f0f4f8;
+  --tech-card-bg: rgba(255, 255, 255, 0.85);
+  --tech-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --tech-shadow-hover: 0 8px 32px rgba(var(--tech-primary-rgb), 0.12);
+  --tech-transition: 0.25s ease;
+}
+
+.dark {
+  --tech-glow: rgba(136, 161, 230, 0.2);
+  --tech-border: rgba(136, 161, 230, 0.2);
+  --tech-bg-soft: #2a2f3a;
+  --tech-card-bg: rgba(42, 47, 58, 0.6);
+  --tech-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --tech-shadow-hover: 0 8px 32px rgba(var(--tech-primary-rgb), 0.15);
+}
+
+// ========== 全局字体优化：更紧凑、更学术化 ==========
 body {
   font-size: 0.9rem !important;
   line-height: 1.5 !important;
@@ -39,6 +62,21 @@ p {
   margin-bottom: 0.7rem !important;
 }
 
+// 全局链接微交互
+a {
+  transition: color var(--tech-transition), opacity var(--tech-transition);
+}
+
+// 标题与列表中的链接悬停：科技蓝高亮
+.article-title a:hover,
+.card-title a:hover {
+  color: var(--tech-accent) !important;
+}
+.dark .article-title a:hover,
+.dark .card-title a:hover {
+  color: var(--tech-primary) !important;
+}
+
 // 列表字体优化
 ul, ol {
   font-size: 0.9rem !important;
@@ -69,6 +107,16 @@ ul, ol {
   padding-right: 3rem !important;
 }
 
+// 文章页 featured/banner 图与正文同宽，不占满屏
+.article-header,
+.article-header.featured-image-wrapper {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
 // 针对小屏幕设备，减少左右边距
 @media (max-width: 768px) {
   .home-section .container {
@@ -76,49 +124,67 @@ ul, ol {
     padding-right: 1.5rem !important;
   }
   
-  .article-container {
+  .article-container,
+  .article-header,
+  .article-header.featured-image-wrapper {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
 }
 
-// 减少首页各部分的间距
+// 减少首页各部分的间距 + 科技感板块与标题
 .home-section {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-  
+  transition: background-color var(--tech-transition);
+
   .section-heading {
     margin-bottom: 1rem !important;
-    // 不修改标题字体大小，保持与导航栏对齐
   }
-  
+
   // 将灰色板块改为更高级的浅灰蓝色
   &:nth-of-type(even) {
-    background: #f0f4f8 !important; // 浅灰蓝色，更高级
+    background: var(--tech-bg-soft) !important;
   }
 }
 
-// 深色主题下的偶数板块背景色
+// 深色主题下的偶数板块背景色（由变量控制，此处可保留覆盖）
 .dark .home-section:nth-of-type(even) {
-  background: #2a2f3a !important; // 深色主题下的深灰蓝色
+  background: var(--tech-bg-soft) !important;
 }
 
-// 紧凑的出版物列表样式
+// ========== 科技感卡片与列表 ==========
+// 出版物列表：微边框 + 悬停微光
 .pub-list-item {
   margin-bottom: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-  
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px;
+  border: 1px solid var(--tech-border);
+  background: var(--tech-card-bg);
+  backdrop-filter: blur(8px);
+  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+
+  &:hover {
+    box-shadow: var(--tech-shadow-hover);
+    border-color: rgba(var(--tech-primary-rgb), 0.4);
+    transform: translateY(-1px);
+  }
+
   .article-title {
     margin-bottom: 0.25rem !important;
     font-size: 1rem !important;
     line-height: 1.4 !important;
   }
-  
+
+  .article-title a {
+    transition: color var(--tech-transition);
+  }
+
   .article-metadata {
     margin-bottom: 0.25rem !important;
     font-size: 0.875rem !important;
   }
-  
+
   .article-style {
     margin-top: 0.25rem !important;
     font-size: 0.875rem !important;
@@ -126,38 +192,69 @@ ul, ol {
   }
 }
 
-// 紧凑的新闻/博客列表样式
+// 新闻/博客列表：与出版物一致的科技感
 .article-list-item {
   margin-bottom: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-  
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px;
+  border: 1px solid var(--tech-border);
+  background: var(--tech-card-bg);
+  backdrop-filter: blur(8px);
+  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+
+  &:hover {
+    box-shadow: var(--tech-shadow-hover);
+    border-color: rgba(var(--tech-primary-rgb), 0.4);
+    transform: translateY(-1px);
+  }
+
   .article-title {
     margin-bottom: 0.25rem !important;
     font-size: 1rem !important;
     line-height: 1.4 !important;
   }
-  
+
+  .article-title a {
+    transition: color var(--tech-transition);
+  }
+
   .article-metadata {
     margin-bottom: 0.25rem !important;
     font-size: 0.875rem !important;
   }
 }
 
-// 紧凑的项目卡片样式
+// 项目卡片与通用卡片：玻璃拟态 + 悬停微动
 .project-card,
 .card {
   margin-bottom: 1rem !important;
-  
+  border-radius: 12px;
+  border: 1px solid var(--tech-border);
+  background: var(--tech-card-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--tech-shadow);
+  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+
+  &:hover {
+    box-shadow: var(--tech-shadow-hover);
+    border-color: rgba(var(--tech-primary-rgb), 0.35);
+    transform: translateY(-2px);
+  }
+
   .card-title {
     font-size: 1.1rem !important;
     margin-bottom: 0.5rem !important;
   }
-  
+
+  .card-title a {
+    transition: color var(--tech-transition);
+  }
+
   .card-text {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
   }
-  
+
   // 缩小项目图片
   .card-img-top,
   img {
@@ -476,10 +573,10 @@ ul, ol {
   margin-bottom: 0.5rem !important;
 }
 
-// 减少卡片之间的间距
+// 卡片内边距（与上方科技感卡片样式配合）
 .card {
   margin-bottom: 1rem !important;
-  
+
   .card-body {
     padding: 1rem !important;
   }
@@ -547,25 +644,33 @@ ul, ol {
   }
 }
 
-// 紧凑的导航栏，限制宽度并居中，蓝色背景
+// ========== 科技感导航栏：微光 + 过渡 ==========
 .navbar {
-  background-color: #88a1e6 !important;
-  background: #88a1e6 !important;
+  background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-accent) 100%) !important;
+  background-color: var(--tech-primary) !important;
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
-  
-  // 导航栏文字颜色改为白色
+  box-shadow: 0 4px 24px var(--tech-glow);
+  transition: box-shadow var(--tech-transition);
+
+  &:hover {
+    box-shadow: 0 6px 32px var(--tech-glow);
+  }
+
   .nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
-    
+    transition: color var(--tech-transition), opacity var(--tech-transition);
+
     &:hover,
     &:focus {
       color: #fff !important;
+      opacity: 1;
     }
-    
+
     &.active {
       color: #fff !important;
       font-weight: bold !important;
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
     }
   }
   
@@ -732,5 +837,66 @@ ul, ol {
 .site-footer {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+}
+
+// ========== 科技感扩展：卡片视图与入场动画 ==========
+.card-simple.view-card {
+  border-radius: 12px;
+  border: 1px solid var(--tech-border);
+  background: var(--tech-card-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--tech-shadow);
+  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+
+  &:hover {
+    box-shadow: var(--tech-shadow-hover);
+    border-color: rgba(var(--tech-primary-rgb), 0.35);
+    transform: translateY(-2px);
+  }
+
+  .card-title a {
+    transition: color var(--tech-transition);
+  }
+}
+
+// 首页区块轻微入场动画（仅首屏加载时）
+@keyframes section-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-section {
+  animation: section-fade-in 0.5s ease-out backwards;
+}
+
+.home-section:nth-of-type(1) { animation-delay: 0.05s; }
+.home-section:nth-of-type(2) { animation-delay: 0.1s; }
+.home-section:nth-of-type(3) { animation-delay: 0.15s; }
+.home-section:nth-of-type(4) { animation-delay: 0.2s; }
+.home-section:nth-of-type(5) { animation-delay: 0.25s; }
+.home-section:nth-of-type(6) { animation-delay: 0.3s; }
+.home-section:nth-of-type(7) { animation-delay: 0.35s; }
+.home-section:nth-of-type(8) { animation-delay: 0.4s; }
+.home-section:nth-of-type(9) { animation-delay: 0.45s; }
+.home-section:nth-of-type(10) { animation-delay: 0.5s; }
+
+// 按钮科技感
+.btn {
+  border-radius: 8px;
+  transition: box-shadow var(--tech-transition), transform var(--tech-transition);
+}
+.btn-primary,
+.btn-outline-primary {
+  box-shadow: 0 2px 8px var(--tech-glow);
+}
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px var(--tech-glow);
 }
 

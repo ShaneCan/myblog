@@ -25,7 +25,7 @@ organizations:
 social:
 - icon: envelope
   icon_pack: fas
-  url: '#contact'
+  link: mailto:tianxiong.zhang@tu-dresden.de
   
 # - display:
 #     header: true

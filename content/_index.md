@@ -125,6 +125,10 @@ sections:
     subtitle: ""
     text: ""
     title: Selected Publications
+    archive:
+      enable: true
+      link: https://scholar.google.com/citations?view_op=list_works
+      text: See all publications in Google Scholar
   design:
     columns: "1"
     view: compact

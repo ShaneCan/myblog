@@ -127,7 +127,7 @@ sections:
     title: Selected Publications
     archive:
       enable: true
-      link: https://scholar.google.com/citations?view_op=list_works
+      link: https://scholar.google.com/citations?view_op=list_works&authuser=1&user=q6B8jmYAAAAJ&authuser=1
       text: See all publications in Google Scholar
   design:
     columns: "1"

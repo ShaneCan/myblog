@@ -1,34 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 | Academic</title>
-    <link>https://example.com/publication-type/2/</link>
-      <atom:link href="https://example.com/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <title>2 | Tianxiong Zhang</title>
+    <link>https://tianxiongzhang.netlify.app/publication-type/2/</link>
+      <atom:link href="https://tianxiongzhang.netlify.app/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://tianxiongzhang.netlify.app/media/icon_hu75c872011a67dd5e35065c38f3c270b7_8584_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
-      <link>https://example.com/publication-type/2/</link>
+      <link>https://tianxiongzhang.netlify.app/publication-type/2/</link>
     </image>
     
     <item>
-      <title>An example journal article</title>
-      <link>https://example.com/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>A Bigraph-Based Digital Twin for Multi-UAV Landing Management</title>
+      <link>https://tianxiongzhang.netlify.app/publication/bigraph_based_digital_twin_for_multi_uav_landing_management/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/bigraph_based_digital_twin_for_multi_uav_landing_management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Review on Constructing, Modeling and Consistency of Digital Twins for AAM Applications</title>
+      <link>https://tianxiongzhang.netlify.app/publication/a-systematic-review-on-constructing-modeling-and-consistency-of-digital-twins-for-aam-applications/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/a-systematic-review-on-constructing-modeling-and-consistency-of-digital-twins-for-aam-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aircraft engine danger areas incursion detection using keypoint detection and IoT</title>
+      <link>https://tianxiongzhang.netlify.app/publication/engine-danger-areas-incursion-detection-method-for-aircraft-taxiing-into-the-gate/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/engine-danger-areas-incursion-detection-method-for-aircraft-taxiing-into-the-gate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detection and Control Framework for Unpiloted Ground Support Equipment within the Aircraft Stand</title>
+      <link>https://tianxiongzhang.netlify.app/publication/enhancing-autonomy-in-airport-ground-support-operations/</link>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/enhancing-autonomy-in-airport-ground-support-operations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SEHRNet - A Lightweight, High-Resolution Network for Aircraft Keypoint Detection</title>
+      <link>https://tianxiongzhang.netlify.app/publication/sehrnet-a-lightweight-high-resolution-network-for-aircraft-keypoint-detection/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/sehrnet-a-lightweight-high-resolution-network-for-aircraft-keypoint-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research on Conflict Detection Model for Taxi‐in Process on the Apron Based on Aircraft Wingtip Keypoint Detection</title>
+      <link>https://tianxiongzhang.netlify.app/publication/research-on-conflict-detection-model-for-taxiin-process-on-the-apron-based-on-aircraft-wingtip-keypoint-detection/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/research-on-conflict-detection-model-for-taxiin-process-on-the-apron-based-on-aircraft-wingtip-keypoint-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Multi-Keypoint Detection Based Method for Conflict Determination between Aircraft and Vehicles on the Apron Gate (In Chinese)</title>
+      <link>https://tianxiongzhang.netlify.app/publication/multi-keypoint-detection/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://tianxiongzhang.netlify.app/publication/multi-keypoint-detection/</guid>
+      <description></description>
     </item>
     
   </channel>

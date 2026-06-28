@@ -374,6 +374,68 @@ ul, ol {
   }
 }
 
+// Post / publication author card — portrait aligned with content height
+.author-card.about-profile {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+
+  .about-profile__photo-col {
+    width: 140px;
+    display: flex;
+  }
+
+  .about-profile__photo-wrap {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
+    min-height: 0;
+  }
+
+  .about-profile__photo-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-profile__name {
+    font-size: 1.05rem !important;
+
+    a {
+      color: var(--c-ink) !important;
+      opacity: 1 !important;
+
+      &:hover { opacity: 0.75 !important; }
+    }
+  }
+
+  .about-profile__bio {
+    font-size: 0.825rem !important;
+    line-height: 1.55 !important;
+    margin: 0.35rem 0 0 !important;
+  }
+
+  .about-profile__social {
+    margin-top: 0 !important;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .about-profile__photo-col {
+      width: 120px;
+      margin: 0 auto;
+    }
+
+    .about-profile__photo-wrap {
+      aspect-ratio: 9 / 16;
+      height: auto;
+    }
+  }
+}
+
 // Social icons (other pages)
 .network-icon {
   margin-top: 0.75rem !important;

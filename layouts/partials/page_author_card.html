@@ -1,0 +1,71 @@
+{{ $author_page := .author_page }}
+{{ $site_type := site.Params.marketing.seo.site_type | default "Person" }}
+{{- $has_profile := not (eq nil $author_page.Params.superuser) -}}
+
+{{ if $has_profile }}
+  {{ $profile_url := $author_page.RelPermalink }}
+  {{ if and (eq $site_type "Person") (eq $author_page.Params.superuser true) }}
+    {{ $profile_url = site.BaseURL }}
+  {{ end }}
+  {{ $avatar := ($author_page.Resources.ByType "image").GetMatch "*avatar*" }}
+
+  <div class="author-card content-widget-hr about-profile">
+    {{ if $avatar }}
+      {{ $avatar_image := $avatar.Fill "270x480 Center" }}
+      <div class="about-profile__photo-col">
+        <div class="about-profile__photo-wrap">
+          {{ if $profile_url }}<a href="{{ $profile_url }}" class="about-profile__photo-link">{{ end }}
+          <img class="about-profile__photo"
+               width="{{ $avatar_image.Width }}"
+               height="{{ $avatar_image.Height }}"
+               src="{{ $avatar_image.RelPermalink }}"
+               alt="{{ $author_page.Title }}">
+          {{ if $profile_url }}</a>{{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="about-profile__content-col">
+      <div class="about-profile__header">
+        <h5 class="about-profile__name card-title">
+          {{ if $profile_url }}<a href="{{ $profile_url }}">{{ end }}
+          {{ $author_page.Title }}
+          {{ if $profile_url }}</a>{{ end }}
+        </h5>
+
+        {{ with $author_page.Params.social }}
+        <ul class="about-profile__social network-icon" aria-label="Social links">
+          {{ range . }}
+          {{ $pack := or .icon_pack "fas" }}
+          {{ $pack_prefix := $pack }}
+          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+            {{ $pack_prefix = "fa" }}
+          {{ end }}
+          {{ $link := .link }}
+          {{ $scheme := (urls.Parse $link).Scheme }}
+          {{ $target := "" }}
+          {{ if not $scheme }}
+            {{ $link = .link | relLangURL }}
+          {{ else if in (slice "http" "https") $scheme }}
+            {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+          {{ end }}
+          <li>
+            <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+              <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      {{ with $author_page.Params.role }}
+      <p class="about-profile__role card-subtitle">{{ . | markdownify | emojify }}</p>
+      {{ end }}
+
+      {{ with $author_page.Params.bio }}
+      <p class="about-profile__bio card-text">{{ . | markdownify | emojify }}</p>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -4,7 +4,7 @@ external_link: https://drive.google.com/file/d/1Yea-FxxpoLUqcawxDfm_9Mo3k4-A7EMz
 image:
   caption: Aircraft in CAFUC
   focal_point: Smart
-summary: Creating a realistic 3D model of CAFUC on-campus aircraft.
+summary: Creating a realistic 3D representation of the TB-20 Aircraft for digital twin simulation.
 tags:
 - Deep Learning
 title: 3D Reconstruction of TB-20 aircraft using 3D Gaussian Splitting and Unreal Engine 5

@@ -4,7 +4,7 @@ external_link: https://drive.google.com/file/d/1rg2-X_NRSgkbEQ1MeNqM7Lpctd0alif-
 image:
   caption: Runtime-Assured Digital Twins for Safe UAS Operations
   focal_point: Smart
-summary: This is a demonstration video of the Formal Model-Based Executable Digital Twin framework for safe UAS operations in discretised 3D airspace. The video illustrates how formal runtime validation, physical execution, and operator monitoring are integrated in a closed loop.
+summary: The video illustrates how formal runtime verification, physical UAS execution, and operator monitoring are integrated into a closed-loop framework for safe UAS operations in a discretised 3D airspace.
 # tags:
 # - Deep Learning
 title: Runtime-Assured Digital Twins for Safe UAS Operations

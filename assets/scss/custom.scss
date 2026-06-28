@@ -374,23 +374,28 @@ ul, ol {
   }
 }
 
-// Post / publication author card — portrait aligned with content height
+// Post / publication author card — compact portrait matching text height
 .author-card.about-profile {
   display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 1.25rem;
   align-items: stretch;
 
   .about-profile__photo-col {
-    width: 140px;
-    display: flex;
+    position: relative;
+    width: 72px;
+    min-height: 0;
+    align-self: stretch;
   }
 
   .about-profile__photo-wrap {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 100%;
-    aspect-ratio: unset;
-    min-height: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--c-border);
+    background: var(--c-surface);
   }
 
   .about-profile__photo-link {
@@ -399,8 +404,24 @@ ul, ol {
     height: 100%;
   }
 
+  .about-profile__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  .about-profile__content-col {
+    align-self: center;
+  }
+
   .about-profile__name {
     font-size: 1.05rem !important;
+    margin-bottom: 0.15rem !important;
 
     a {
       color: var(--c-ink) !important;
@@ -410,10 +431,14 @@ ul, ol {
     }
   }
 
+  .about-profile__role {
+    margin: 0 0 0.15rem !important;
+  }
+
   .about-profile__bio {
     font-size: 0.825rem !important;
     line-height: 1.55 !important;
-    margin: 0.35rem 0 0 !important;
+    margin: 0 !important;
   }
 
   .about-profile__social {
@@ -421,17 +446,11 @@ ul, ol {
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 56px minmax(0, 1fr);
     gap: 1rem;
 
     .about-profile__photo-col {
-      width: 120px;
-      margin: 0 auto;
-    }
-
-    .about-profile__photo-wrap {
-      aspect-ratio: 9 / 16;
-      height: auto;
+      width: 56px;
     }
   }
 }

@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories | Tianxiong Zhang</title>
-    <link>https://tianxiongzhang.netlify.app/categories/</link>
-      <atom:link href="https://tianxiongzhang.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
-    <description>Categories</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://tianxiongzhang.netlify.app/media/icon_hu75c872011a67dd5e35065c38f3c270b7_8584_512x512_fill_lanczos_center_3.png</url>
-      <title>Categories</title>
-      <link>https://tianxiongzhang.netlify.app/categories/</link>
-    </image>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories | Tianxiong Zhang</title><link>https://tianxiongzhang.netlify.app/categories/</link><atom:link href="https://tianxiongzhang.netlify.app/categories/index.xml" rel="self" type="application/rss+xml"/><description>Categories</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><image><url>https://tianxiongzhang.netlify.app/media/icon_hu75c872011a67dd5e35065c38f3c270b7_8584_512x512_fill_lanczos_center_3.png</url><title>Categories</title><link>https://tianxiongzhang.netlify.app/categories/</link></image></channel></rss>

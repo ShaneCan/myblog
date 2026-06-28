@@ -1,11 +1,15 @@
 // =============================================================================
 // Tianxiong Zhang · Academic Personal Website
-// Aesthetic: precision-document — a well-typeset dossier for an AAM/CV researcher
 // =============================================================================
 
-// ── Typeface ──────────────────────────────────────────────────────────────────
-// IBM Plex Sans: used by research institutions; precise, technical, not generic
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+// Lock rem base so dev preview and production builds render at the same scale.
+html {
+  font-size: 15px !important;
+
+  @media screen and (min-width: 58em) {
+    font-size: 15px !important;
+  }
+}
 
 // ── Design tokens ─────────────────────────────────────────────────────────────
 :root {

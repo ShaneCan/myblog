@@ -56,6 +56,66 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--c-ink) !important;
 }
 
+h1 { font-size: 1.35rem !important; }
+h2 { font-size: 1.1rem !important; margin-top: 0.75rem !important; }
+h3 { font-size: 1rem !important; margin-top: 0.75rem !important; }
+h4, h5, h6 { font-size: 0.925rem !important; margin-top: 0.5rem !important; }
+
+// Homepage & widget section titles (override theme 2.25rem h1)
+.home-section .section-heading {
+  text-align: left !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.home-section .section-heading h1 {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--c-muted) !important;
+  margin: 0 !important;
+  padding-left: 0.875rem !important;
+  border-left: 3px solid var(--c-accent) !important;
+  line-height: 1.4 !important;
+  display: inline-block !important;
+}
+
+.home-section .section-heading p {
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  color: var(--c-muted) !important;
+  margin-top: 0.5rem !important;
+  line-height: 1.6 !important;
+}
+
+// List item titles (publications, news, demos)
+.section-subheading,
+.section-subheading.article-title {
+  font-size: 0.94rem !important;
+  font-weight: 500 !important;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  line-height: 1.45 !important;
+}
+
+.article-style {
+  font-size: 0.875rem !important;
+  line-height: 1.65 !important;
+}
+
+.article-metadata,
+.stream-meta {
+  font-size: 0.8rem !important;
+  line-height: 1.45 !important;
+  color: var(--c-muted) !important;
+}
+
+.btn-page-header {
+  font-size: 0.72rem !important;
+  padding: 0.2rem 0.55rem !important;
+}
+
 p {
   font-size: 0.925rem !important;
   line-height: 1.75 !important;
@@ -124,22 +184,13 @@ ul, ol {
 }
 
 // ── Section headings: dossier-margin-label treatment ─────────────────────────
-// This is the signature: small-caps uppercase labels with a left-border rule,
-// treating each section like a marked section of an academic document.
-h2.section-heading,
-h1.section-heading,
-.section-heading {
-  position: relative !important;
+.section-heading h1,
+.section-heading h2 {
   font-size: 0.72rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.14em !important;
   text-transform: uppercase !important;
   color: var(--c-muted) !important;
-  margin-bottom: 2rem !important;
-  padding-left: 0.875rem !important;
-  border-left: 3px solid var(--c-accent) !important;
-  line-height: 1.4 !important;
-  display: block !important;
 }
 
 // ── Navigation ────────────────────────────────────────────────────────────────
@@ -177,25 +228,22 @@ h1.section-heading,
   }
 }
 
-// ── About / Biography — portrait photo + content column ───────────────────────
+// ── About / Biography — grid layout, compact portrait ─────────────────────────
 .wg-about-biography,
 .about-widget {
   .about-profile {
-    align-items: flex-start !important;
-    gap: 0;
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
   }
 
   .about-profile__photo-col {
-    padding-right: 1.75rem !important;
-  }
-
-  .about-profile__content-col {
-    padding-left: 0 !important;
+    width: 168px;
   }
 
   .about-profile__photo-wrap {
-    width: 100%;
-    margin: 0;
+    width: 168px;
     aspect-ratio: 9 / 16;
     overflow: hidden;
     border-radius: var(--radius);
@@ -230,33 +278,32 @@ h1.section-heading,
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.75rem 1rem;
-    margin-bottom: 0.65rem;
+    gap: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .about-profile__name {
-    font-size: 1.85rem !important;
+    font-size: 1.35rem !important;
     font-weight: 700 !important;
-    letter-spacing: -0.04em !important;
-    line-height: 1.15 !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.2 !important;
     color: var(--c-ink) !important;
     margin: 0 !important;
-    flex: 0 1 auto;
   }
 
   .about-profile__meta {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
   }
 
   .about-profile__role {
-    font-size: 0.925rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--c-ink);
-    margin: 0 0 0.15rem;
+    margin: 0 0 0.1rem;
   }
 
   .about-profile__org {
-    font-size: 0.875rem;
+    font-size: 0.825rem;
     margin: 0;
 
     a {
@@ -271,22 +318,21 @@ h1.section-heading,
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     list-style: none;
     padding: 0;
     margin: 0 !important;
-    flex: 0 0 auto;
 
     a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 2rem;
-      height: 2rem;
+      width: 1.75rem;
+      height: 1.75rem;
       border: 1px solid var(--c-border);
       border-radius: var(--radius);
       color: var(--c-muted) !important;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       opacity: 1 !important;
       transition: color var(--t), border-color var(--t), background var(--t);
 
@@ -300,41 +346,30 @@ h1.section-heading,
   }
 
   .about-profile__bio {
-    font-size: 0.94rem !important;
-    line-height: 1.8 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.75 !important;
     color: var(--c-ink) !important;
 
     p {
-      font-size: 0.94rem !important;
-      line-height: 1.8 !important;
-      margin-bottom: 0.75rem !important;
+      font-size: 0.875rem !important;
+      line-height: 1.75 !important;
+      margin-bottom: 0.65rem !important;
       text-align: justify;
     }
 
     p:last-child { margin-bottom: 0 !important; }
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 767px) {
+    .about-profile {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
     .about-profile__photo-col,
-    .about-profile__content-col {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-
-  @media (max-width: 991px) {
-    .about-profile__photo-col {
-      margin-bottom: 1.5rem;
-      padding-right: 0 !important;
-    }
-
     .about-profile__photo-wrap {
-      max-width: 240px;
+      width: 150px;
       margin: 0 auto;
-    }
-
-    .about-profile__header {
-      justify-content: flex-start;
     }
   }
 }
@@ -553,8 +588,14 @@ h1.section-heading,
 
 // ── Contact ───────────────────────────────────────────────────────────────────
 .wg-contact {
+  .fa-li.fa-2x {
+    font-size: 1rem !important;
+    width: 1.25rem !important;
+    line-height: inherit !important;
+  }
+
   li {
-    font-size: 0.9rem !important;
+    font-size: 0.875rem !important;
     margin-bottom: 0.4rem !important;
     line-height: 1.5 !important;
   }

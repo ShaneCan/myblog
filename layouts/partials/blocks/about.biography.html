@@ -1,4 +1,4 @@
-{{/* Custom About block — portrait 9:16 photo + bio column */}}
+{{/* Custom About block — compact portrait + aligned content */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 
@@ -11,10 +11,10 @@
 {{ $person := $person_page.Params }}
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
 
-<div class="about-profile row">
-  <div class="col-12 col-lg-6 about-profile__photo-col">
-    {{ if $avatar }}
-      {{ $avatar_image := $avatar.Fill "360x640 Center" }}
+<div class="about-profile">
+  {{ if $avatar }}
+    {{ $avatar_image := $avatar.Fill "270x480 Center" }}
+    <div class="about-profile__photo-col">
       <div class="about-profile__photo-wrap">
         <img class="about-profile__photo"
              width="{{ $avatar_image.Width }}"
@@ -22,10 +22,10 @@
              src="{{ $avatar_image.RelPermalink }}"
              alt="{{ $person_page.Title }}">
       </div>
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 
-  <div class="col-12 col-lg-6 about-profile__content-col">
+  <div class="about-profile__content-col">
     {{ with $block.content.title }}
     <p class="about-profile__eyebrow">{{ . | markdownify | emojify }}</p>
     {{ end }}

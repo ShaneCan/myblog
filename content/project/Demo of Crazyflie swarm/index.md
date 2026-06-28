@@ -1,11 +1,11 @@
 ---
-date: "2025-05-10T00:00:00Z"
-external_link: https://drive.google.com/file/d/1nT6YvSe-pquf8D7Ml8khQbziOPbkohoG/view?usp=sharing
+date: "2026-06-10T00:00:00Z"
+external_link: https://drive.google.com/file/d/1rg2-X_NRSgkbEQ1MeNqM7Lpctd0alif-/view?usp=sharing
 image:
-  caption: Crazyflie Swarm
+  caption: Runtime-Assured Digital Twins for Safe UAS Operations
   focal_point: Smart
-summary: This is a demo of Crazyflie UAV Swarm, which can monitor and control the UAV status in real time through Web Service and Rviz.
+summary: This is a demonstration video of the Formal Model-Based Executable Digital Twin framework for safe UAS operations in discretised 3D airspace. The video illustrates how formal runtime validation, physical execution, and operator monitoring are integrated in a closed loop.
 # tags:
 # - Deep Learning
-title: Crazyflie UAV Swarm Digital Twin
+title: Runtime-Assured Digital Twins for Safe UAS Operations
 ---

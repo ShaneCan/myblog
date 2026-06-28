@@ -2,14 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tianxiongzhang.netlify.app/talk/example-talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://tianxiongzhang.netlify.app/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://tianxiongzhang.netlify.app/post/towards-a-bigraph-based-digital-twin-framework-for-multi-uas-coordination-in-iam/</loc>
     <lastmod>2026-02-27T20:38:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -326,23 +318,10 @@
     <lastmod>2022-09-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://tianxiongzhang.netlify.app/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://tianxiongzhang.netlify.app/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://tianxiongzhang.netlify.app/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://tianxiongzhang.netlify.app/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://tianxiongzhang.netlify.app/admin/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://tianxiongzhang.netlify.app/event/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

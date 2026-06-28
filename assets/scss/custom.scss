@@ -1,902 +1,600 @@
-// 自定义样式：使布局更紧凑和学术化，兼具科技感与高级感
+// =============================================================================
+// Tianxiong Zhang · Academic Personal Website
+// Aesthetic: precision-document — a well-typeset dossier for an AAM/CV researcher
+// =============================================================================
 
-// ========== 科技感配色与变量 ==========
+// ── Typeface ──────────────────────────────────────────────────────────────────
+// IBM Plex Sans: used by research institutions; precise, technical, not generic
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+// ── Design tokens ─────────────────────────────────────────────────────────────
 :root {
-  --tech-primary: #88a1e6;
-  --tech-primary-rgb: 136, 161, 230;
-  --tech-accent: #5b7fd6;
-  --tech-glow: rgba(136, 161, 230, 0.35);
-  --tech-border: rgba(136, 161, 230, 0.25);
-  --tech-bg-soft: #f0f4f8;
-  --tech-card-bg: rgba(255, 255, 255, 0.85);
-  --tech-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  --tech-shadow-hover: 0 8px 32px rgba(var(--tech-primary-rgb), 0.12);
-  --tech-transition: 0.25s ease;
+  // Palette — grounded in TU Dresden's institutional identity
+  --c-ink:      #1a2332;   // near-black with blue undertone
+  --c-paper:    #ffffff;
+  --c-surface:  #f4f7fb;   // very light blue-grey for alternating sections
+  --c-accent:   #1d4e9b;   // TU Dresden institutional blue (signature)
+  --c-link:     #2557aa;
+  --c-muted:    #64748b;   // metadata, captions, secondary text
+  --c-border:   #dde5f0;
+  --c-rule:     rgba(29, 78, 155, 0.15); // faint blue for dividers
+
+  // Structure
+  --max-w:      860px;
+  --radius:     3px;
+  --t:          0.18s ease;
 }
 
 .dark {
-  --tech-glow: rgba(136, 161, 230, 0.2);
-  --tech-border: rgba(136, 161, 230, 0.2);
-  --tech-bg-soft: #2a2f3a;
-  --tech-card-bg: rgba(42, 47, 58, 0.6);
-  --tech-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  --tech-shadow-hover: 0 8px 32px rgba(var(--tech-primary-rgb), 0.15);
+  --c-ink:     #dce5f0;
+  --c-paper:   #0f1923;
+  --c-surface: #162031;
+  --c-link:    #6a9ee0;
+  --c-muted:   #8fa0bb;
+  --c-border:  #243147;
+  --c-rule:    rgba(106, 158, 224, 0.15);
 }
 
-// ========== 全局字体优化：更紧凑、更学术化 ==========
+// ── Global typography ─────────────────────────────────────────────────────────
 body {
-  font-size: 0.9rem !important;
-  line-height: 1.5 !important;
-  letter-spacing: -0.01em !important;
+  font-family: 'IBM Plex Sans', -apple-system, system-ui, sans-serif !important;
+  font-size: 0.925rem !important;
+  line-height: 1.7 !important;
+  color: var(--c-ink) !important;
+  -webkit-font-smoothing: antialiased;
 }
 
-// 标题字体优化
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
   font-weight: 600 !important;
   letter-spacing: -0.02em !important;
-  line-height: 1.3 !important;
-  margin-top: 0.75rem !important;
-  margin-bottom: 0.5rem !important;
+  line-height: 1.25 !important;
+  color: var(--c-ink) !important;
 }
 
-h1 {
-  font-size: 1.6rem !important;
-}
-
-h2 {
-  font-size: 1.4rem !important;
-}
-
-h3 {
-  font-size: 1.2rem !important;
-}
-
-h4 {
-  font-size: 1.1rem !important;
-}
-
-// 段落和文本优化
 p {
-  font-size: 0.9rem !important;
-  line-height: 1.6 !important;
-  margin-bottom: 0.7rem !important;
+  font-size: 0.925rem !important;
+  line-height: 1.75 !important;
+  margin-bottom: 0.8rem !important;
 }
 
-// 全局链接微交互
 a {
-  transition: color var(--tech-transition), opacity var(--tech-transition);
+  color: var(--c-link) !important;
+  text-decoration: none !important;
+  transition: opacity var(--t);
+
+  &:hover { opacity: 0.7 !important; }
 }
 
-// 标题与列表中的链接悬停：科技蓝高亮
-.article-title a:hover,
-.card-title a:hover {
-  color: var(--tech-accent) !important;
-}
-.dark .article-title a:hover,
-.dark .card-title a:hover {
-  color: var(--tech-primary) !important;
-}
-
-// 列表字体优化
 ul, ol {
-  font-size: 0.9rem !important;
-  line-height: 1.6 !important;
-  
-  li {
-    margin-bottom: 0.3rem !important;
-    line-height: 1.5 !important;
-  }
+  font-size: 0.925rem !important;
+  li { margin-bottom: 0.2rem !important; }
 }
 
-// 限制内容宽度，增加左右边距，使其更像学术CV
-// 针对landing page的container
-.home-section .container {
-  max-width: 900px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
+::selection {
+  background: rgba(29, 78, 155, 0.15) !important;
 }
 
-// 限制文章内容宽度
+// ── Content width ─────────────────────────────────────────────────────────────
+.home-section .container,
 .article-container {
-  max-width: 900px !important;
+  max-width: var(--max-w) !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
 }
 
-// 文章页 featured/banner 图与正文同宽，不占满屏
 .article-header,
 .article-header.featured-image-wrapper {
-  max-width: 900px !important;
+  max-width: var(--max-w) !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
 }
 
-// 针对小屏幕设备，减少左右边距
 @media (max-width: 768px) {
-  .home-section .container {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-  
+  .home-section .container,
   .article-container,
-  .article-header,
-  .article-header.featured-image-wrapper {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+  .article-header {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 }
 
-// 减少首页各部分的间距 + 科技感板块与标题
+// ── Home sections ─────────────────────────────────────────────────────────────
 .home-section {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-  transition: background-color var(--tech-transition);
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+  background: var(--c-paper) !important;
 
-  .section-heading {
-    margin-bottom: 1rem !important;
-  }
-
-  // 将灰色板块改为更高级的浅灰蓝色
   &:nth-of-type(even) {
-    background: var(--tech-bg-soft) !important;
+    background: var(--c-surface) !important;
   }
 }
 
-// 深色主题下的偶数板块背景色（由变量控制，此处可保留覆盖）
-.dark .home-section:nth-of-type(even) {
-  background: var(--tech-bg-soft) !important;
+.dark .home-section {
+  background: var(--c-paper) !important;
+  &:nth-of-type(even) { background: var(--c-surface) !important; }
 }
 
-// ========== 科技感卡片与列表 ==========
-// 出版物列表：微边框 + 悬停微光
+// ── Section headings: dossier-margin-label treatment ─────────────────────────
+// This is the signature: small-caps uppercase labels with a left-border rule,
+// treating each section like a marked section of an academic document.
+h2.section-heading,
+h1.section-heading,
+.section-heading {
+  position: relative !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--c-muted) !important;
+  margin-bottom: 2rem !important;
+  padding-left: 0.875rem !important;
+  border-left: 3px solid var(--c-accent) !important;
+  line-height: 1.4 !important;
+  display: block !important;
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+.navbar {
+  border-bottom: 1px solid var(--c-border) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: none !important;
+}
+
+.dark .navbar {
+  background: rgba(15, 25, 35, 0.96) !important;
+  border-bottom-color: var(--c-border) !important;
+}
+
+.navbar-brand {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em !important;
+  color: var(--c-ink) !important;
+}
+
+.nav-link {
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase !important;
+  color: var(--c-muted) !important;
+  padding: 0.25rem 0.75rem !important;
+  transition: color var(--t) !important;
+
+  &:hover, &.active {
+    color: var(--c-accent) !important;
+    opacity: 1 !important;
+  }
+}
+
+// ── About / Biography — portrait photo + content column ───────────────────────
+.wg-about-biography,
+.about-widget {
+  .about-profile {
+    align-items: flex-start !important;
+    gap: 0;
+  }
+
+  .about-profile__photo-col {
+    padding-right: 1.75rem !important;
+  }
+
+  .about-profile__content-col {
+    padding-left: 0 !important;
+  }
+
+  .about-profile__photo-wrap {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--c-border);
+    background: var(--c-surface);
+  }
+
+  .about-profile__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  .about-profile__eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-muted);
+    margin: 0 0 0.5rem;
+    padding-left: 0.875rem;
+    border-left: 3px solid var(--c-accent);
+    line-height: 1.4;
+  }
+
+  .about-profile__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .about-profile__name {
+    font-size: 1.85rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em !important;
+    line-height: 1.15 !important;
+    color: var(--c-ink) !important;
+    margin: 0 !important;
+    flex: 0 1 auto;
+  }
+
+  .about-profile__meta {
+    margin-bottom: 0.85rem;
+  }
+
+  .about-profile__role {
+    font-size: 0.925rem;
+    font-weight: 500;
+    color: var(--c-ink);
+    margin: 0 0 0.15rem;
+  }
+
+  .about-profile__org {
+    font-size: 0.875rem;
+    margin: 0;
+
+    a {
+      color: var(--c-link) !important;
+      opacity: 1 !important;
+
+      &:hover { opacity: 0.75 !important; }
+    }
+  }
+
+  .about-profile__social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 !important;
+    flex: 0 0 auto;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      color: var(--c-muted) !important;
+      font-size: 0.95rem;
+      opacity: 1 !important;
+      transition: color var(--t), border-color var(--t), background var(--t);
+
+      &:hover {
+        color: var(--c-accent) !important;
+        border-color: var(--c-accent);
+        background: rgba(29, 78, 155, 0.04);
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .about-profile__bio {
+    font-size: 0.94rem !important;
+    line-height: 1.8 !important;
+    color: var(--c-ink) !important;
+
+    p {
+      font-size: 0.94rem !important;
+      line-height: 1.8 !important;
+      margin-bottom: 0.75rem !important;
+      text-align: justify;
+    }
+
+    p:last-child { margin-bottom: 0 !important; }
+  }
+
+  @media (min-width: 992px) {
+    .about-profile__photo-col,
+    .about-profile__content-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .about-profile__photo-col {
+      margin-bottom: 1.5rem;
+      padding-right: 0 !important;
+    }
+
+    .about-profile__photo-wrap {
+      max-width: 240px;
+      margin: 0 auto;
+    }
+
+    .about-profile__header {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// Social icons (other pages)
+.network-icon {
+  margin-top: 0.75rem !important;
+
+  a {
+    font-size: 1.05rem !important;
+    margin: 0 0.4rem !important;
+    color: var(--c-muted) !important;
+    opacity: 1 !important;
+
+    &:hover {
+      color: var(--c-accent) !important;
+    }
+  }
+}
+
+// ── Publications — bibliography list style ────────────────────────────────────
 .pub-list-item {
-  margin-bottom: 0.75rem !important;
-  padding: 0.75rem 1rem !important;
-  border-radius: 8px;
-  border: 1px solid var(--tech-border);
-  background: var(--tech-card-bg);
-  backdrop-filter: blur(8px);
-  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+  padding: 0.85rem 0 0.85rem 1.1rem !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  border-left: 2px solid var(--c-border) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  transition: border-left-color var(--t) !important;
 
   &:hover {
-    box-shadow: var(--tech-shadow-hover);
-    border-color: rgba(var(--tech-primary-rgb), 0.4);
-    transform: translateY(-1px);
+    border-left-color: var(--c-accent) !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
 
   .article-title {
-    margin-bottom: 0.25rem !important;
-    font-size: 1rem !important;
-    line-height: 1.4 !important;
-  }
-
-  .article-title a {
-    transition: color var(--tech-transition);
+    font-size: 0.94rem !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.2rem !important;
   }
 
   .article-metadata {
-    margin-bottom: 0.25rem !important;
-    font-size: 0.875rem !important;
+    font-size: 0.815rem !important;
+    color: var(--c-muted) !important;
+    margin-bottom: 0.2rem !important;
+    line-height: 1.4 !important;
   }
 
   .article-style {
-    margin-top: 0.25rem !important;
     font-size: 0.875rem !important;
-    line-height: 1.5 !important;
+    line-height: 1.55 !important;
+    margin-top: 0.2rem !important;
+  }
+
+  img {
+    max-height: 100px !important;
+    max-width: 160px !important;
+    width: auto !important;
+    object-fit: cover !important;
+    border-radius: var(--radius) !important;
+    border: 1px solid var(--c-border) !important;
   }
 }
 
-// 新闻/博客列表：与出版物一致的科技感
+// ── News / Posts ──────────────────────────────────────────────────────────────
 .article-list-item {
-  margin-bottom: 0.75rem !important;
-  padding: 0.75rem 1rem !important;
-  border-radius: 8px;
-  border: 1px solid var(--tech-border);
-  background: var(--tech-card-bg);
-  backdrop-filter: blur(8px);
-  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
+  padding: 0.85rem 0 0.85rem 1.1rem !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  border-left: 2px solid var(--c-border) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  transition: border-left-color var(--t) !important;
 
   &:hover {
-    box-shadow: var(--tech-shadow-hover);
-    border-color: rgba(var(--tech-primary-rgb), 0.4);
-    transform: translateY(-1px);
+    border-left-color: var(--c-accent) !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
 
   .article-title {
-    margin-bottom: 0.25rem !important;
-    font-size: 1rem !important;
-    line-height: 1.4 !important;
-  }
-
-  .article-title a {
-    transition: color var(--tech-transition);
+    font-size: 0.94rem !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.15rem !important;
   }
 
   .article-metadata {
-    margin-bottom: 0.25rem !important;
-    font-size: 0.875rem !important;
+    font-size: 0.815rem !important;
+    color: var(--c-muted) !important;
+    line-height: 1.4 !important;
+  }
+
+  img {
+    max-height: 90px !important;
+    max-width: 140px !important;
+    width: auto !important;
+    object-fit: cover !important;
+    border-radius: var(--radius) !important;
+    border: 1px solid var(--c-border) !important;
   }
 }
 
-// 项目卡片与通用卡片：玻璃拟态 + 悬停微动
-.project-card,
+// ── Project cards ─────────────────────────────────────────────────────────────
 .card {
+  border: 1px solid var(--c-border) !important;
+  border-radius: var(--radius) !important;
+  background: var(--c-paper) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition: border-color var(--t), box-shadow var(--t) !important;
   margin-bottom: 1rem !important;
-  border-radius: 12px;
-  border: 1px solid var(--tech-border);
-  background: var(--tech-card-bg);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--tech-shadow);
-  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
 
   &:hover {
-    box-shadow: var(--tech-shadow-hover);
-    border-color: rgba(var(--tech-primary-rgb), 0.35);
-    transform: translateY(-2px);
+    border-color: var(--c-accent) !important;
+    box-shadow: 0 2px 16px rgba(29, 78, 155, 0.1) !important;
+    transform: none !important;
   }
 
   .card-title {
-    font-size: 1.1rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-
-  .card-title a {
-    transition: color var(--tech-transition);
+    font-size: 0.94rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.35rem !important;
   }
 
   .card-text {
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-  }
-
-  // 缩小项目图片
-  .card-img-top,
-  img {
-    max-height: 100px !important;
-    max-width: 200px !important;
-    width: auto !important;
-    height: auto !important;
-    object-fit: cover !important;
+    font-size: 0.875rem !important;
+    color: var(--c-muted) !important;
+    line-height: 1.55 !important;
   }
 }
 
-// Projects showcase视图的图片优化
+// Project showcase image
 .wg-portfolio {
-  .card {
-    .card-img-top {
-      max-height: 100px !important;
-      object-fit: cover !important;
-      width: auto !important;
-    }
-  }
-  
-  // 项目展示图片
-  .project-card img,
+  .card-img-top,
   .card img {
-    max-height: 100px !important;
+    max-height: 130px !important;
+    width: 100% !important;
     object-fit: cover !important;
-    width: auto !important;
   }
-  
-  // Showcase视图中的图片（Projects主要使用的视图）
+
   .view-showcase {
-    // 保持垂直居中对齐，防止换行
     .row {
       align-items: center !important;
-      flex-wrap: nowrap !important;
-      display: flex !important;
     }
-    
-    // 图片列：不占满宽度，只占图片实际宽度
-    .col-md-6.order-first {
-      flex: 0 0 auto !important;
-      width: auto !important;
-      max-width: none !important;
-      padding-right: 1rem !important;
-      flex-shrink: 0 !important;
-      
-      img {
-        max-height: 120px !important;
-        max-width: 200px !important;
-        width: auto !important;
-        height: auto !important;
-        object-fit: cover !important;
-        display: block !important;
-      }
-    }
-    
-    // 当图片在右侧时（order-md-2的情况）
-    .col-md-6.order-md-2 {
-      flex: 0 0 auto !important;
-      width: auto !important;
-      max-width: none !important;
-      padding-left: 1rem !important;
-      padding-right: 0 !important;
-      flex-shrink: 0 !important;
-      
-      img {
-        max-height: 120px !important;
-        max-width: 200px !important;
-        width: auto !important;
-        height: auto !important;
-        object-fit: cover !important;
-        display: block !important;
-      }
-    }
-    
-    // 文字列：紧挨着图片，从左边开始，保持垂直居中，不换行
-    // 选择不包含order-first和order-md-2的col-md-6（即文字列）
-    .col-md-6:not(.order-first):not(.order-md-2) {
-      flex: 1 1 auto !important;
-      padding-left: 0 !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      min-width: 0 !important; // 允许flex子元素缩小
-      max-width: none !important; // 移除最大宽度限制
-      width: auto !important; // 自动宽度
-      flex-shrink: 1 !important; // 允许缩小但不要换行
-      flex-grow: 1 !important; // 可以增长
-      
-      // 文字列内的内容不要有宽度限制
-      > * {
-        max-width: none !important;
-        width: auto !important;
-      }
-      
-      // 确保文字内容可以正常换行，但不要提前换行
-      .article-title,
-      .article-style,
-      .section-subheading {
-        max-width: none !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        white-space: normal !important;
-      }
-    }
-    
-    // 通用图片样式
+
     img {
-      max-height: 120px !important;
-      max-width: 200px !important;
+      max-height: 130px !important;
+      max-width: 220px !important;
       width: auto !important;
       height: auto !important;
       object-fit: cover !important;
-    }
-    
-    // 确保在所有屏幕尺寸下都不换行
-    @media (max-width: 767px) {
-      .row {
-        flex-wrap: nowrap !important;
-      }
-      
-      .col-md-6 {
-        flex: 0 0 auto !important;
-        width: auto !important;
-        max-width: none !important;
-      }
-      
-      // 小屏幕时文字列也要紧贴图片
-      .col-md-6:not(.order-first):not(.order-md-2) {
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-      }
+      border-radius: var(--radius) !important;
+      border: 1px solid var(--c-border) !important;
     }
   }
 }
 
-// News/Posts中的图片优化
-.article-list-item,
-.pub-list-item {
-  img {
-    max-height: 120px !important;
-    max-width: 200px !important;
-    object-fit: cover !important;
-  }
-  
-  .article-banner,
-  .featured-image {
-    max-height: 150px !important;
-    object-fit: cover !important;
+// ── Tags / Badges ─────────────────────────────────────────────────────────────
+.badge,
+.article-tag {
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+  border-radius: 2px !important;
+  padding: 0.15rem 0.45rem !important;
+  background: var(--c-surface) !important;
+  color: var(--c-muted) !important;
+  border: 1px solid var(--c-border) !important;
+  text-transform: uppercase !important;
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+.btn {
+  border-radius: var(--radius) !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03em !important;
+  padding: 0.3rem 0.75rem !important;
+  transition: background var(--t), border-color var(--t), opacity var(--t) !important;
+}
+
+.btn-primary {
+  background-color: var(--c-accent) !important;
+  border-color: var(--c-accent) !important;
+
+  &:hover { opacity: 0.85 !important; }
+}
+
+.btn-outline-primary {
+  border-color: var(--c-accent) !important;
+  color: var(--c-accent) !important;
+
+  &:hover {
+    background-color: var(--c-accent) !important;
+    color: #fff !important;
+    opacity: 1 !important;
   }
 }
 
-// 减少关于部分的间距
-.wg-about-biography,
-.about-widget {
-  // 缩小头像大小
-  .avatar {
-    max-width: 180px !important;
-    max-height: 180px !important;
-    width: 180px !important;
-    height: 180px !important;
-  }
-  
-  #profile .avatar {
-    max-width: 180px !important;
-    max-height: 180px !important;
-    width: 180px !important;
-    height: 180px !important;
-  }
-  
-  .portrait-title h2 {
-    margin-bottom: 0.5rem !important;
-    font-size: 1.5rem !important;
-  }
-  
-  .portrait-title h3 {
-    margin-bottom: 0.5rem !important;
-    font-size: 1.1rem !important;
-  }
-  
-  .article-style {
-    margin-top: 0.5rem !important;
-    font-size: 1.05rem !important; // 增大字体，使其更协调
-    line-height: 1.7 !important; // 增加行高，提高可读性
-  }
-  
-  // Bio部分的段落文字
-  .article-style p {
-    font-size: 1.05rem !important;
-    line-height: 1.7 !important;
-    margin-bottom: 0.8rem !important;
-  }
-  
-  // 确保在小屏幕上，头像和Bio内容上下排列
-  .container > .row {
-    @media (max-width: 991px) {
-      flex-direction: column !important;
-      
-      > .col-lg-4,
-      > .col-lg-8 {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        width: 100% !important;
-      }
-    }
-  }
-  
-  // 确保Interests和Education横向显示，字体更小
-  // 只针对包含Interests和Education的内部row
-  .col-lg-8 > .row {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    
-    // Interests列
-    > .col-md-5 {
-      flex: 0 0 auto !important;
-      width: auto !important;
-      max-width: none !important;
-      margin-right: 2rem !important;
-      
-      .section-subheading {
-        font-size: 0.85rem !important;
-        font-weight: 600 !important;
-        margin-bottom: 0.5rem !important;
-      }
-      
-      .ul-interests {
-        font-size: 0.8rem !important;
-        line-height: 1.4 !important;
-        
-        li {
-          margin-bottom: 0.2rem !important;
-        }
-      }
-    }
-    
-    // Education列
-    > .col-md-7 {
-      flex: 0 0 auto !important;
-      width: auto !important;
-      max-width: none !important;
-      
-      .section-subheading {
-        font-size: 0.85rem !important;
-        font-weight: 600 !important;
-        margin-bottom: 0.5rem !important;
-      }
-      
-      .ul-edu {
-        font-size: 0.8rem !important;
-        line-height: 1.4 !important;
-        
-        li {
-          margin-bottom: 0.4rem !important;
-          
-          .description {
-            p.course {
-              font-size: 0.8rem !important;
-              line-height: 1.3 !important;
-            }
-            
-            p.institution {
-              font-size: 0.75rem !important;
-              line-height: 1.3 !important;
-            }
-          }
-        }
-      }
-    }
-  }
+// Archive / "see all" link
+.archive-link,
+.see-all {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: var(--c-accent) !important;
+
+  &:hover { opacity: 0.7 !important; }
 }
 
-// 紧凑的联系信息样式
-.contact-widget {
-  .contact-widget-item {
-    margin-bottom: 0.5rem !important;
-    font-size: 0.95rem !important;
-  }
-}
-
-// Gallery图片样式：竖图改为正方形，宽屏保持不变
-.gallery-grid {
-  // 确保所有非full的图片都显示为正方形
-  .gallery-item {
-    // 默认正方形（span 1行）
-    grid-row-end: span 3 !important;
-  }
-  
-  // medium和large也改为正方形
-  .gallery-item--medium,
-  .gallery-item--large {
-    grid-row-end: span 2 !important;
-  }
-  
-  // full（宽屏）保持不变
-  .gallery-item--full {
-    // 保持原有的宽屏样式
-    @media screen and (min-width: 768px) {
-      grid-column: 1/-1 !important;
-      grid-row-end: span 2 !important;
-    }
-  }
-  
-  // 确保所有图片都使用cover模式填充
-  .gallery-item img {
-    object-fit: cover !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
-// 减少图库的间距
-.gallery {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-// 卡片内边距（与上方科技感卡片样式配合）
-.card {
-  margin-bottom: 1rem !important;
-
-  .card-body {
-    padding: 1rem !important;
-  }
-}
-
-// 导航栏字体优化
-.navbar {
-  font-size: 0.85rem !important;
-  
-  .nav-link {
-    font-size: 0.85rem !important;
-    letter-spacing: -0.01em !important;
-    padding: 0.4rem 0.6rem !important;
-  }
-}
-
-// 元数据字体优化（日期、作者等）
-.article-metadata {
-  font-size: 0.85rem !important;
-  line-height: 1.4 !important;
-}
-
-// 卡片和容器字体优化
-.card {
-  font-size: 0.9rem !important;
-  
-  .card-title {
-    font-size: 1.1rem !important;
-    line-height: 1.3 !important;
-  }
-  
-  .card-text {
+// ── Contact ───────────────────────────────────────────────────────────────────
+.wg-contact {
+  li {
     font-size: 0.9rem !important;
+    margin-bottom: 0.4rem !important;
     line-height: 1.5 !important;
   }
-}
 
-// 紧凑的列表样式
-ul, ol {
-  margin-bottom: 0.75rem !important;
-  
-  li {
-    margin-bottom: 0.25rem !important;
+  .contact-widget-item {
+    margin-bottom: 0.4rem !important;
   }
 }
 
-// Education部分行间距调整
-.ul-edu {
-  li {
+// ── Footer ────────────────────────────────────────────────────────────────────
+.page-footer {
+  border-top: 1px solid var(--c-border) !important;
+  font-size: 0.78rem !important;
+  color: var(--c-muted) !important;
+  padding: 1.5rem 0 !important;
+  background: var(--c-paper) !important;
+}
+
+// ── Article / publication pages ───────────────────────────────────────────────
+.article-container {
+  h1 {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.03em !important;
     margin-bottom: 0.5rem !important;
-    
-    .description {
-      margin-bottom: 0 !important;
-      
-      p.course {
-        margin-bottom: 0.1rem !important;
-        line-height: 1.3 !important;
-      }
-      
-      p.institution {
-        margin-bottom: 0 !important;
-        line-height: 1.3 !important;
-      }
-    }
+  }
+
+  .article-metadata {
+    font-size: 0.82rem !important;
+    color: var(--c-muted) !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  img {
+    border-radius: var(--radius) !important;
+    border: 1px solid var(--c-border) !important;
+    max-width: 100% !important;
   }
 }
 
-// ========== 科技感导航栏：微光 + 过渡 ==========
-.navbar {
-  background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-accent) 100%) !important;
-  background-color: var(--tech-primary) !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  box-shadow: 0 4px 24px var(--tech-glow);
-  transition: box-shadow var(--tech-transition);
-
-  &:hover {
-    box-shadow: 0 6px 32px var(--tech-glow);
-  }
-
-  .nav-link {
-    color: rgba(255, 255, 255, 0.9) !important;
-    transition: color var(--tech-transition), opacity var(--tech-transition);
-
-    &:hover,
-    &:focus {
-      color: #fff !important;
-      opacity: 1;
-    }
-
-    &.active {
-      color: #fff !important;
-      font-weight: bold !important;
-      text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
-    }
-  }
-  
-  // 深色主题下导航栏激活状态改为蓝色
-  .dark & {
-    .nav-link {
-      color: rgba(255, 255, 255, 0.9) !important;
-      
-      &:hover,
-      &:focus {
-        color: #fff !important;
-      }
-      
-      &.active {
-        color: #88a1e6 !important; // 深色主题下激活状态为蓝色
-        font-weight: bold !important;
-      }
-    }
-  }
-  
-  // 导航栏切换按钮颜色
-  .navbar-toggler {
-    color: #fff !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    }
-  }
-  
-  // 限制导航栏容器宽度，使其与页面内容宽度一致
-  .container-xl {
-    max-width: 900px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-    
-    @media (min-width: 992px) {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-    }
-  }
-  
-  // 确保导航菜单居中（仅在大屏幕上）
-  @media (min-width: 992px) {
-    .navbar-collapse {
-      justify-content: center !important;
-      align-items: center !important;
-      display: flex !important;
-    }
-  }
-  
-  // 确保导航菜单项垂直居中（仅在大屏幕上）
-  @media (min-width: 992px) {
-    .navbar-nav {
-      display: flex !important;
-      align-items: center !important;
-      
-      .nav-item {
-        display: flex !important;
-        align-items: center !important;
-      }
-      
-      .nav-link {
-        display: flex !important;
-        align-items: center !important;
-        line-height: 1 !important;
-      }
-    }
-  }
-  
-  // 针对小屏幕设备，减少左右边距，并确保折叠功能正常
-  @media (max-width: 991px) {
-    .container-xl {
-      padding-left: 1.5rem !important;
-      padding-right: 1.5rem !important;
-    }
-    
-    // 确保在小屏幕上不强制显示，允许Bootstrap的折叠功能
-    .navbar-collapse {
-      display: none !important;
-      background-color: #fff !important; // 白色背景
-      
-      &.show {
-        display: block !important;
-        background-color: #fff !important; // 展开时也保持白色背景
-      }
-    }
-    
-    // 小屏幕下折叠菜单中的导航链接文字颜色改为黑色
-    .navbar-collapse .nav-link {
-      color: #333 !important;
-      
-      &:hover,
-      &:focus {
-        color: #000 !important;
-      }
-      
-      &.active {
-        color: #88a1e6 !important; // 激活状态为蓝色
-        font-weight: bold !important;
-      }
-    }
-    
-    // 确保小屏幕下的导航菜单项文字可见
-    #navbar-main .main-menu-item .nav-link {
-      color: #333 !important;
-      
-      &:hover,
-      &:focus {
-        color: #000 !important;
-      }
-      
-      &.active {
-        color: #88a1e6 !important; // 激活状态为蓝色
-        font-weight: bold !important;
-      }
-    }
-    
-    // 深色主题下小屏幕折叠菜单的文字颜色
-    .dark & {
-      .navbar-collapse {
-        background-color: #282a36 !important; // 深色背景
-        
-        &.show {
-          background-color: #282a36 !important;
-        }
-      }
-      
-      .navbar-collapse .nav-link {
-        color: rgba(255, 255, 255, 0.9) !important;
-        
-        &:hover,
-        &:focus {
-          color: #fff !important;
-        }
-        
-        &.active {
-          color: #88a1e6 !important; // 深色主题下激活状态为蓝色
-          font-weight: bold !important;
-        }
-      }
-      
-      #navbar-main .main-menu-item .nav-link {
-        color: rgba(255, 255, 255, 0.9) !important;
-        
-        &:hover,
-        &:focus {
-          color: #fff !important;
-        }
-        
-        &.active {
-          color: #88a1e6 !important; // 深色主题下激活状态为蓝色
-          font-weight: bold !important;
-        }
-      }
-    }
+// ── Reduced motion ────────────────────────────────────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
   }
 }
-
-// 减少页脚间距
-.site-footer {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-// ========== 科技感扩展：卡片视图与入场动画 ==========
-.card-simple.view-card {
-  border-radius: 12px;
-  border: 1px solid var(--tech-border);
-  background: var(--tech-card-bg);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--tech-shadow);
-  transition: box-shadow var(--tech-transition), border-color var(--tech-transition), transform var(--tech-transition);
-
-  &:hover {
-    box-shadow: var(--tech-shadow-hover);
-    border-color: rgba(var(--tech-primary-rgb), 0.35);
-    transform: translateY(-2px);
-  }
-
-  .card-title a {
-    transition: color var(--tech-transition);
-  }
-}
-
-// 首页区块轻微入场动画（仅首屏加载时）
-@keyframes section-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.home-section {
-  animation: section-fade-in 0.5s ease-out backwards;
-}
-
-.home-section:nth-of-type(1) { animation-delay: 0.05s; }
-.home-section:nth-of-type(2) { animation-delay: 0.1s; }
-.home-section:nth-of-type(3) { animation-delay: 0.15s; }
-.home-section:nth-of-type(4) { animation-delay: 0.2s; }
-.home-section:nth-of-type(5) { animation-delay: 0.25s; }
-.home-section:nth-of-type(6) { animation-delay: 0.3s; }
-.home-section:nth-of-type(7) { animation-delay: 0.35s; }
-.home-section:nth-of-type(8) { animation-delay: 0.4s; }
-.home-section:nth-of-type(9) { animation-delay: 0.45s; }
-.home-section:nth-of-type(10) { animation-delay: 0.5s; }
-
-// 按钮科技感
-.btn {
-  border-radius: 8px;
-  transition: box-shadow var(--tech-transition), transform var(--tech-transition);
-}
-.btn-primary,
-.btn-outline-primary {
-  box-shadow: 0 2px 8px var(--tech-glow);
-}
-.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px var(--tech-glow);
-}
-

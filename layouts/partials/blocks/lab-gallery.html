@@ -1,0 +1,28 @@
+{{/* A wide photo strip, independent of the homepage's reading width. */}}
+<div class="lab-gallery" role="group" aria-label="{{ .wcBlock.content.title }}">
+  {{ range .wcBlock.content.images }}
+    {{ $image := resources.Get (printf "media/%s" .filename) }}
+    {{ if not $image }}
+      {{ errorf "Lab gallery image not found: assets/media/%s" .filename }}
+    {{ else }}
+      {{ $small := $image.Resize "480x webp q85" }}
+      {{ $large := $image.Resize "960x webp q85" }}
+      <img
+        class="lab-gallery__image"
+        src="{{ $small.RelPermalink }}"
+        srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} 960w"
+        sizes="(max-width: 767px) 78vw, (min-width: 1600px) 368px, 23vw"
+        width="{{ $small.Width }}"
+        height="{{ $small.Height }}"
+        alt="{{ .alt }}"
+        loading="lazy"
+        decoding="async"
+        data-zoomable
+        data-zoom-src="{{ $image.RelPermalink }}"
+        tabindex="0"
+        role="button"
+        aria-label="Enlarge photo: {{ .alt }}"
+      >
+    {{ end }}
+  {{ end }}
+</div>

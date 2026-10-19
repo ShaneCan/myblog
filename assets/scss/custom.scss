@@ -16,7 +16,7 @@ html {
   // Palette — grounded in TU Dresden's institutional identity
   --c-ink:      #1a2332;   // near-black with blue undertone
   --c-paper:    #ffffff;
-  --c-surface:  #f4f7fb;   // very light blue-grey for alternating sections
+  --c-surface:  #f4f7fb;   // very light blue-grey for subtle UI surfaces
   --c-accent:   #1d4e9b;   // TU Dresden institutional blue (signature)
   --c-link:     #2557aa;
   --c-muted:    #64748b;   // metadata, captions, secondary text
@@ -172,15 +172,6 @@ ul, ol {
   padding-top: 3.5rem !important;
   padding-bottom: 3.5rem !important;
   background: var(--c-paper) !important;
-
-  &:nth-of-type(even) {
-    background: var(--c-surface) !important;
-  }
-}
-
-.dark .home-section {
-  background: var(--c-paper) !important;
-  &:nth-of-type(even) { background: var(--c-surface) !important; }
 }
 
 // ── Section headings: dossier-margin-label treatment ─────────────────────────
@@ -683,6 +674,59 @@ ul, ol {
 
   .contact-widget-item {
     margin-bottom: 0.4rem !important;
+  }
+}
+
+// ── Lab gallery — four photographs across a wider canvas ──────────────────────
+.home-section.wg-lab-gallery {
+  padding-top: 0 !important;
+  background: var(--c-paper) !important;
+
+  > .container {
+    width: 100%;
+    max-width: 1600px !important;
+    padding-left: clamp(1.25rem, 3vw, 3.2rem) !important;
+    padding-right: clamp(1.25rem, 3vw, 3.2rem) !important;
+  }
+}
+
+.lab-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.5rem, 1vw, 1rem);
+}
+
+.lab-gallery__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: var(--radius);
+  cursor: zoom-in;
+
+  &:focus-visible {
+    outline: 2px solid var(--c-link);
+    outline-offset: 4px;
+  }
+}
+
+// Keep one readable row on small screens, with the next photo peeking into view.
+@media (max-width: 767px) {
+  .lab-gallery {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 84%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding: 6px 6px 12px;
+    margin: -6px -6px 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-border) transparent;
+  }
+
+  .lab-gallery__image {
+    scroll-snap-align: start;
   }
 }
 

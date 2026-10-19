@@ -80,3 +80,15 @@
   });
 })();
 </script>
+
+{{/* Match the theme's image zoom interaction for keyboard users. */}}
+<script>
+document.querySelectorAll('.lab-gallery__image').forEach(function (image) {
+  image.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      image.click();
+    }
+  });
+});
+</script>

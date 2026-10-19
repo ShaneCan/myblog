@@ -101,6 +101,20 @@ sections:
       padding: ["40px", "0", "40px", "0"]
   id: contact
 
+- block: lab-gallery
+  content:
+    title: Crazyflie lab experiments
+    images:
+    - filename: albums/Crazyflie.png
+      alt: Crazyflie quadrotors.
+    - filename: albums/Crazyflies-2.png
+      alt: Crazyflie quadrotors.
+    - filename: albums/Crazyflies-3.png
+      alt: Crazyflie quadrotors.
+    - filename: albums/Crazyflies in Robolab.png
+      alt: Crazyflie quadrotors.
+  id: lab-gallery
+
 title: null
 type: landing
 ---

@@ -93,7 +93,7 @@ sections:
       street: Andreas-Pfitzmann-Bau (APB), Nöthnitzer Strasse 46
     autolink: true
     email: tianxiong.zhang[at]tu-dresden.de
-    subtitle: I am happy to supervise Bachelor's and Master's theses on topics related to digital twins, computer vision, and robotics in air transportation. Feel free to reach out.
+    subtitle: I am happy to supervise Bachelor's and Master's theses on topics related to AI, computer vision, and robotics applications in air transportation. Feel free to reach out.
     title: Contact
   design:
     columns: "1"

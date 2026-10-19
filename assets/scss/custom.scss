@@ -39,6 +39,15 @@ html {
   --c-rule:    rgba(106, 158, 224, 0.15);
 }
 
+// Local display font for section titles; licensed under the SIL Open Font License.
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/cormorant-garamond-semibold.ttf') format('truetype');
+}
+
 // ── Global typography ─────────────────────────────────────────────────────────
 body {
   font-family: 'IBM Plex Sans', -apple-system, system-ui, sans-serif !important;
@@ -67,17 +76,24 @@ h4, h5, h6 { font-size: 0.925rem !important; margin-top: 0.5rem !important; }
   margin-bottom: 1.25rem !important;
 }
 
-.home-section .section-heading h1 {
-  font-size: 1rem !important;
+.home-section .section-heading h1,
+.home-section .section-heading h2,
+.home-section .about-profile__eyebrow {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(1.9rem, 2.2vw, 2.2rem) !important;
   font-weight: 600 !important;
-  letter-spacing: 0.14em !important;
-  text-transform: uppercase !important;
-  color: var(--c-muted) !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  color: var(--c-ink) !important;
   margin: 0 !important;
   padding-left: 0.875rem !important;
   border-left: 3px solid var(--c-accent) !important;
-  line-height: 1.4 !important;
+  line-height: 1.15 !important;
   display: inline-block !important;
+}
+
+.home-section .about-profile__eyebrow {
+  margin-bottom: 0.85rem !important;
 }
 
 .home-section .section-heading p {
@@ -174,16 +190,6 @@ ul, ol {
   background: var(--c-paper) !important;
 }
 
-// ── Section headings: dossier-margin-label treatment ─────────────────────────
-.section-heading h1,
-.section-heading h2 {
-  font-size: 1rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.14em !important;
-  text-transform: uppercase !important;
-  color: var(--c-muted) !important;
-}
-
 // ── Navigation ────────────────────────────────────────────────────────────────
 .navbar {
   border-bottom: 1px solid var(--c-border) !important;
@@ -251,18 +257,6 @@ ul, ol {
     margin: 0 !important;
     border: none !important;
     border-radius: 0 !important;
-  }
-
-  .about-profile__eyebrow {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--c-muted);
-    margin: 0 0 0.5rem;
-    padding-left: 0.875rem;
-    border-left: 3px solid var(--c-accent);
-    line-height: 1.4;
   }
 
   .about-profile__header {

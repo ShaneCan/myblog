@@ -103,10 +103,10 @@ sections:
 
 - block: lab-gallery
   content:
-    title: Crazyflie lab experiments
+    title: Drone experiments
     images:
-    - filename: albums/Crazyflie.png
-      alt: Crazyflie quadrotors.
+    - filename: albums/Holybro_field_test.png
+      alt: Holybro quadrotors.
     - filename: albums/Crazyflies-2.png
       alt: Crazyflie quadrotors.
     - filename: albums/Crazyflies-3.png
